@@ -1,0 +1,48 @@
+digraph SecurityFramework {
+    rankdir=TB;
+    node [shape=box, style=rounded, fontname="Arial", margin="0.3,0.1"];
+    edge [fontname="Arial"];
+
+    // Main Components
+    Strategy [label="Strategic Security Vision", style=filled, fillcolor=lightblue];
+    Principles [label="Foundational Principles"];
+    Architecture [label="Security Architecture"];
+    Controls [label="Security Controls"];
+    ThreatMgmt [label="Threat Management"];
+    Tech [label="Advanced Technologies"];
+    Compliance [label="Compliance & Governance"];
+    Metrics [label="Security Metrics"];
+    
+    // Subcomponents
+    node [shape=box, style="rounded,filled", fillcolor=lightgrey];
+    IAM [label="Identity & Access\nManagement"];
+    Network [label="Network Security"];
+    Data [label="Data Protection"];
+    ML [label="Machine Learning"];
+    AI [label="Artificial Intelligence"];
+    SOC [label="Security Operations"];
+    
+    // Relationships
+    Strategy -> {Principles, Architecture, Controls} [dir=forward];
+    Principles -> {IAM, Network, Data} [dir=forward];
+    Architecture -> {IAM, Network, Data} [dir=forward];
+    Controls -> ThreatMgmt [dir=forward];
+    ThreatMgmt -> {SOC, ML, AI} [dir=forward];
+    {ML, AI} -> Metrics [dir=forward];
+    {IAM, Network, Data} -> Compliance [dir=forward];
+    
+    // Subgraph for Metrics
+    subgraph cluster_metrics {
+        style=dashed;
+        label="Key Performance Indicators";
+        MTTD [label="Mean Time to\nDetect"];
+        MTTR [label="Mean Time to\nRespond"];
+        Risk [label="Risk Mitigation\nEffectiveness"];
+        Metrics -> {MTTD, MTTR, Risk} [dir=forward];
+    }
+
+    // Add invisible edges to improve layout
+    edge [style=invis];
+    IAM -> Network -> Data;
+    ML -> AI;
+}

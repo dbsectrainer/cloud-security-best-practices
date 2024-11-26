@@ -1,0 +1,85 @@
+digraph RiskManagement {
+    rankdir=TB;
+    compound=true;
+    node [shape=box, style=rounded, fontname="Arial", margin="0.3,0.1"];
+    edge [fontname="Arial"];
+
+    // Core Process
+    Identification [label="Risk Identification", style=filled, fillcolor=lightblue];
+    Assessment [label="Risk Assessment", style=filled, fillcolor=lightblue];
+    Mitigation [label="Risk Mitigation", style=filled, fillcolor=lightblue];
+    Monitoring [label="Continuous Monitoring", style=filled, fillcolor=lightblue];
+
+    // Risk Categories
+    subgraph cluster_categories {
+        label="Risk Categories";
+        style=dashed;
+        node [style=filled, fillcolor=lightgrey];
+        Technical [label="Technical Risks"];
+        Operational [label="Operational Risks"];
+        Strategic [label="Strategic Risks"];
+        Compliance [label="Compliance Risks"];
+    }
+
+    // Risk Evaluation
+    subgraph cluster_evaluation {
+        label="Risk Evaluation";
+        style=dashed;
+        node [style=filled, fillcolor=lightyellow];
+        Likelihood [label="Likelihood\nAssessment"];
+        Impact [label="Impact\nAnalysis"];
+        Score [label="Risk Score"];
+    }
+
+    // Mitigation Strategies
+    subgraph cluster_controls {
+        label="Control Measures";
+        style=dashed;
+        node [style=filled, fillcolor=lightpink];
+        Preventive [label="Preventive\nControls"];
+        Detective [label="Detective\nControls"];
+        Corrective [label="Corrective\nControls"];
+        Compensating [label="Compensating\nControls"];
+    }
+
+    // Monitoring Components
+    subgraph cluster_monitoring {
+        label="Monitoring System";
+        style=dashed;
+        node [style=filled, fillcolor=lightgreen];
+        RealTime [label="Real-time\nDetection"];
+        Predictive [label="Predictive\nModeling"];
+        Reporting [label="Risk\nReporting"];
+    }
+
+    // Main Process Flow
+    Identification -> Assessment;
+    Assessment -> Mitigation;
+    Mitigation -> Monitoring;
+    Monitoring -> Identification [constraint=false];
+
+    // Risk Category Connections
+    Identification -> {Technical, Operational, Strategic, Compliance} [style=dotted];
+    {Technical, Operational, Strategic, Compliance} -> Assessment;
+
+    // Evaluation Process
+    Assessment -> {Likelihood, Impact} [style=dotted];
+    {Likelihood, Impact} -> Score;
+    Score -> Mitigation;
+
+    // Control Implementation
+    Mitigation -> {Preventive, Detective, Corrective, Compensating} [style=dotted];
+    {Preventive, Detective, Corrective, Compensating} -> Monitoring;
+
+    // Monitoring Activities
+    Monitoring -> {RealTime, Predictive, Reporting} [style=dotted];
+    {RealTime, Predictive} -> Reporting;
+    Reporting -> Identification [constraint=false, style=dashed];
+
+    // Add labels to key transitions
+    edge [fontsize=10];
+    Identification -> Assessment [label="Risks Identified"];
+    Assessment -> Mitigation [label="Risk Level\nDetermined"];
+    Mitigation -> Monitoring [label="Controls\nImplemented"];
+    Monitoring -> Identification [label="New Risks\nDetected"];
+}

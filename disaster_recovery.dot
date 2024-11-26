@@ -1,0 +1,80 @@
+digraph DisasterRecovery {
+    rankdir=TB;
+    compound=true;
+    node [shape=box, style=rounded, fontname="Arial", margin="0.3,0.1"];
+    edge [fontname="Arial"];
+
+    // Main Components
+    Detection [label="Disaster Detection\n& Monitoring", style=filled, fillcolor=lightblue];
+    Assessment [label="Impact Assessment", style=filled, fillcolor=lightblue];
+    Activation [label="Recovery Plan\nActivation", style=filled, fillcolor=lightblue];
+    
+    // Recovery Objectives
+    subgraph cluster_objectives {
+        label="Recovery Objectives";
+        style=dashed;
+        node [style=filled, fillcolor=lightgrey];
+        RTO [label="RTO\n(Recovery Time\nObjective)"];
+        RPO [label="RPO\n(Recovery Point\nObjective)"];
+    }
+
+    // Backup Strategies
+    subgraph cluster_backup {
+        label="Backup Strategies";
+        style=dashed;
+        node [style=filled, fillcolor=lightyellow];
+        Critical [label="Critical Systems\nContinuous Backup"];
+        Standard [label="Standard Systems\nDaily Backup"];
+        Protection [label="Data Protection\nMechanisms"];
+    }
+
+    // Recovery Sites
+    subgraph cluster_sites {
+        label="Recovery Site Options";
+        style=dashed;
+        node [style=filled, fillcolor=lightpink];
+        Hot [label="Hot Standby\nReal-time Sync"];
+        Warm [label="Warm Standby\nPeriodic Sync"];
+        Cold [label="Cold Standby\nMinimal Setup"];
+    }
+
+    // Recovery Process
+    subgraph cluster_process {
+        label="Recovery Process";
+        style=dashed;
+        node [style=filled, fillcolor=lightgreen];
+        Failover [label="System Failover"];
+        Restoration [label="Data Restoration"];
+        Verification [label="System Verification"];
+        Return [label="Return to Normal\nOperations"];
+    }
+
+    // Main Flow
+    Detection -> Assessment;
+    Assessment -> Activation;
+    Activation -> Failover;
+    Failover -> Restoration;
+    Restoration -> Verification;
+    Verification -> Return;
+
+    // Objectives Impact
+    {RTO, RPO} -> Assessment [style=dotted];
+    
+    // Backup Strategy Selection
+    Assessment -> {Critical, Standard} [style=dotted];
+    {Critical, Standard} -> Protection;
+    
+    // Recovery Site Selection
+    Activation -> {Hot, Warm, Cold} [style=dotted];
+    {Hot, Warm, Cold} -> Failover;
+
+    // Add labels to key transitions
+    edge [fontsize=10];
+    Detection -> Assessment [label="Impact Detected"];
+    Assessment -> Activation [label="Strategy Selected"];
+    Activation -> Failover [label="Site Activated"];
+    Verification -> Return [label="Systems Verified"];
+
+    // Monitoring Feedback Loop
+    Return -> Detection [label="Continuous Monitoring", constraint=false, style=dashed];
+}

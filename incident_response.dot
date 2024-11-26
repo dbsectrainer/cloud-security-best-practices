@@ -1,0 +1,73 @@
+digraph IncidentResponse {
+    rankdir=TB;
+    node [shape=box, style=rounded, fontname="Arial", margin="0.3,0.1"];
+    edge [fontname="Arial"];
+    
+    // Main Process Nodes
+    Detection [label="Incident Detection\n(Monitoring & Alerts)", style=filled, fillcolor=lightblue];
+    Assessment [label="Initial Assessment\n(Severity Classification)", style=filled, fillcolor=lightblue];
+    Triage [label="Triage & Classification"];
+    Response [label="Response Actions"];
+    Recovery [label="Recovery Process"];
+    Analysis [label="Post-Incident Analysis", style=filled, fillcolor=lightgreen];
+    
+    // Severity Classification
+    subgraph cluster_severity {
+        label="Severity Levels";
+        style=dashed;
+        node [style=filled, fillcolor=lightgrey];
+        Level1 [label="Level 1\nLow Impact"];
+        Level2 [label="Level 2\nModerate Impact"];
+        Level3 [label="Level 3\nHigh Impact"];
+        Level4 [label="Level 4\nCritical Impact"];
+    }
+    
+    // Response Team
+    subgraph cluster_team {
+        label="Response Team";
+        style=dashed;
+        node [style=filled, fillcolor=lightyellow];
+        SIRT [label="Security Incident\nResponse Team"];
+        Exec [label="Executive\nLeadership"];
+        IT [label="IT Operations"];
+        Legal [label="Legal Department"];
+        PR [label="Public Relations"];
+    }
+    
+    // Response Actions
+    subgraph cluster_actions {
+        label="Response Actions";
+        style=dashed;
+        node [style=filled, fillcolor=lightpink];
+        Containment [label="Containment"];
+        Investigation [label="Investigation"];
+        Mitigation [label="Mitigation"];
+        Documentation [label="Documentation"];
+    }
+    
+    // Main Flow
+    Detection -> Assessment;
+    Assessment -> Triage;
+    Triage -> Response;
+    Response -> Recovery;
+    Recovery -> Analysis;
+    
+    // Classification Flow
+    Triage -> {Level1, Level2, Level3, Level4} [style=dotted];
+    
+    // Team Involvement
+    {Level1, Level2, Level3, Level4} -> SIRT [style=dotted];
+    SIRT -> {IT, Legal, PR} [style=dotted];
+    Level4 -> Exec [style=dotted];
+    
+    // Response Actions Flow
+    Response -> {Containment, Investigation, Mitigation, Documentation} [style=dotted];
+    {Containment, Investigation, Mitigation} -> Documentation;
+    
+    // Add labels to some edges
+    edge [fontsize=10];
+    Detection -> Assessment [label="Alert Triggered"];
+    Assessment -> Triage [label="Severity Determined"];
+    Response -> Recovery [label="Threat Contained"];
+    Recovery -> Analysis [label="System Restored"];
+}
