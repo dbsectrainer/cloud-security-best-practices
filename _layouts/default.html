@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.title}} - Cloud Security Documentation</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            mermaid.initialize({ startOnLoad: true });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="container">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/IMPLEMENTATION_GUIDE.html">Implementation Guide</a></li>
+                <li><a href="/SECURITY_FRAMEWORK.html">Security Framework</a></li>
+                <li><a href="/COMPLIANCE.html">Compliance</a></li>
+                <li><a href="/ARCHITECTURE_AND_DIAGRAMS.html">Architecture</a></li>
+                <li><a href="/TESTING_GUIDE.html">Testing Guide</a></li>
+                <li><a href="/INNOVATION.html">Innovation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1>{{page.title}}</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        {{content}}
+    </main>
+
+    <footer class="container">
+        <p>Last updated: May 2025 | <a href="https://github.com/yourusername/cloud-security-best-practices">View on GitHub</a></p>
+    </footer>
+</body>
+</html>

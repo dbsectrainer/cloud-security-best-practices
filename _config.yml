@@ -1,0 +1,55 @@
+title: Cloud Security Documentation
+description: Comprehensive cloud security strategies, best practices, and innovative approaches
+baseurl: "/cloud-security-best-practices"
+url: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  math_engine: mathjax
+
+# Default layout
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Convert Markdown files to HTML
+include:
+  - IMPLEMENTATION_GUIDE.md
+  - SECURITY_FRAMEWORK.md
+  - COMPLIANCE.md
+  - ARCHITECTURE_AND_DIAGRAMS.md
+  - TESTING_GUIDE.md
+  - INNOVATION.md
+
+relative_links:
+  enabled: true
+  collections: true
+
+# SEO
+twitter:
+  username: yourusername
+  card: summary_large_image
+social:
+  name: Your Name
+  links:
+    - https://github.com/yourusername
+    - https://twitter.com/yourusername
+
+# Analytics
+google_analytics: # Add your Google Analytics tracking ID
