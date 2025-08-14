@@ -1,5 +1,5 @@
-title: Cloud Security Documentation
-description: Comprehensive cloud security strategies, best practices, and innovative approaches
+title: Cloud Security Documentation (2024-2025)
+description: Comprehensive cloud security strategies, AI-enhanced best practices, and innovative approaches for modern enterprise security
 baseurl: "/cloud-security-best-practices"
 url: ""
 
@@ -36,6 +36,11 @@ include:
   - ARCHITECTURE_AND_DIAGRAMS.md
   - TESTING_GUIDE.md
   - INNOVATION.md
+  - RISK_MANAGEMENT.md
+  - DISASTER_RECOVERY.md
+  - INCIDENT_RESPONSE_PLAN.md
+  - VENDOR_SECURITY_ASSESSMENT.md
+  - SECURITY_TRAINING_GUIDE.md
 
 relative_links:
   enabled: true

@@ -119,25 +119,31 @@ module "security_testing_framework" {
 - Data encryption verification
 - Compliance rule enforcement
 
-## Security Testing Tools
+## Security Testing Tools (2024-2025 Current Generation)
 
-### Vulnerability Scanning
-- Nessus
-- OpenVAS
-- Qualys
-- Tenable.io
+### Vulnerability Scanning (AI-Enhanced)
+- **Enterprise**: Nessus Professional, Qualys, Rapid7 InsightVM
+- **Open Source**: OpenVAS, Nuclei, ZAP with AI-powered scanning
+- **Cloud Native**: Tenable.io, Aqua Trivy, Grype
+- **Container/K8s**: Twistlock/Prisma Cloud, Aqua Security, Sysdig Secure
 
-### Penetration Testing
-- Metasploit
-- Burp Suite
-- OWASP ZAP
-- Nmap
+### Penetration Testing (Modern Toolkit)
+- **Frameworks**: Metasploit Pro, Cobalt Strike, Core Impact
+- **Web App Security**: Burp Suite Professional, OWASP ZAP, PortSwigger extensions
+- **Cloud Penetration**: Pacu (AWS), Stormspotter (Azure), GCP Scanner
+- **Infrastructure**: Nmap with NSE scripts, Masscan, Zmap
 
-### Compliance Validation
-- Prisma Cloud
-- Fugue
-- Dome9
-- Aqua Security
+### Compliance Validation (Policy-as-Code)
+- **Multi-cloud CSPM**: Prisma Cloud, Lacework, Wiz, Orca Security
+- **Open Source**: Cloud Custodian, Prowler, Scout Suite
+- **Kubernetes**: Polaris, Falco, OPA Gatekeeper, Kube-bench
+- **Infrastructure**: Chef InSpec, AWS Config Rules, Bridgecrew
+
+### AI/ML Security Testing (Emerging 2024-2025)
+- **AI Model Testing**: Adversarial Robustness Toolbox (ART), CleverHans
+- **LLM Security**: Garak, AI Red Team tools, Prompt injection testing
+- **Data Poisoning Detection**: MLSec toolkit, Robust ML libraries
+- **Model Validation**: Evidently AI, WhyLabs, Neptune ML
 
 ## Testing Frequency and Scheduling
 

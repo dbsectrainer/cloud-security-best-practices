@@ -11,22 +11,27 @@ Develop a robust, adaptable compliance framework that:
 
 ## Regulatory Frameworks Covered
 
-### 1. Data Protection Regulations
-- GDPR (General Data Protection Regulation)
-- CCPA (California Consumer Privacy Act)
-- HIPAA (Health Insurance Portability and Accountability Act)
-- PIPEDA (Personal Information Protection and Electronic Documents Act)
+## Regulatory Frameworks Covered (Updated 2024-2025)
 
-### 2. Financial Compliance
-- SOX (Sarbanes-Oxley Act)
-- PCI-DSS (Payment Card Industry Data Security Standard)
-- GLBA (Gramm-Leach-Bliley Act)
+### 1. Data Protection Regulations (Current Status)
+- **GDPR**: Enhanced AI processing requirements and automated decision-making rules
+- **CCPA/CPRA**: California Privacy Rights Act with expanded consumer rights
+- **HIPAA**: Updated technical safeguards for cloud computing and AI systems
+- **PIPEDA**: Modernized with digital privacy considerations
 
-### 3. Industry-Specific Standards
-- NIST (National Institute of Standards and Technology)
-- ISO 27001/27002
-- FedRAMP (Federal Risk and Authorization Management Program)
-- HITRUST (Health Information Trust Alliance)
+### 2. Financial Compliance (Enhanced Requirements)
+- **SOX**: Updated IT controls for cloud and AI-driven financial reporting
+- **PCI-DSS v4.0**: Enhanced authentication, encryption, and validation requirements
+- **GLBA**: Modernized safeguards rule with cloud-specific considerations
+- **EU AI Act**: Comprehensive AI regulation affecting financial services
+
+### 3. Industry-Specific Standards (2024-2025 Updates)
+- **NIST Cybersecurity Framework 2.0**: Updated with enhanced governance function
+- **NIST AI Risk Management Framework (AI RMF 1.0)**: New AI governance standards
+- **ISO 27001:2022**: Updated controls for cloud, AI, and emerging technologies
+- **ISO 27002:2022**: Enhanced security controls guidance
+- **FedRAMP**: Updated baselines and continuous monitoring requirements
+- **HITRUST CSF v11+**: Enhanced with AI and cloud security controls
 
 ## Compliance Automation Architecture
 

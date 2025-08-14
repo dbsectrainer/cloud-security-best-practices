@@ -18,29 +18,33 @@
 
 ## Key Technologies and Tools
 
-### Cloud Management
-- AWS Organizations
-- Azure Active Directory
-- Google Cloud Identity and Access Management
+### Cloud Management (2024-2025 Current)
+- **AWS**: Organizations, Control Tower, Service Catalog with enhanced security features
+- **Azure**: Active Directory, Azure Lighthouse, Policy as Code
+- **Google Cloud**: Identity and Access Management, Organization Policy, Asset Inventory
+- **Multi-cloud**: Unified identity management with cross-cloud governance
 
-### Infrastructure as Code
-- Terraform
-- CloudFormation
-- Azure Resource Manager Templates
+### Infrastructure as Code (Enhanced for Security)
+- **Terraform**: v1.6+ with enhanced security scanning and policy validation
+- **CloudFormation**: Guard and custom hooks for security validation
+- **Azure Resource Manager**: Bicep templates with security best practices
+- **Pulumi**: Policy as Code with real-time compliance checking
+- **CDK**: Cloud Development Kit with security-first constructs
 
-### Security Monitoring
-- AWS Security Hub
-- Azure Security Center
-- Google Cloud Security Command Center
-- CloudWatch
-- Splunk
-- ELK Stack
+### Security Monitoring (Current Generation)
+- **AWS**: Security Hub with enhanced findings, GuardDuty with ML detection
+- **Azure**: Microsoft Defender for Cloud with CSPM/CWPP capabilities
+- **Google Cloud**: Security Command Center Premium with Chronicle integration
+- **Multi-cloud CNAPP**: Prisma Cloud, Lacework, Wiz, Orca Security
+- **Observability**: Splunk with AI/ML, ELK Stack with security analytics
+- **Container Security**: Twistlock/Prisma Cloud, Aqua Security, Sysdig Secure
 
-### Compliance and Governance
-- HashiCorp Sentinel
-- Open Policy Agent (OPA)
-- Terraform Compliance
-- Checkov
+### Compliance and Governance (Policy-as-Code)
+- **HashiCorp Sentinel**: Enhanced with Terraform Cloud integration
+- **Open Policy Agent (OPA)**: Gatekeeper for Kubernetes, Conftest for CI/CD
+- **Cloud Custodian**: Multi-cloud governance and compliance
+- **Checkov**: Static analysis for Infrastructure as Code
+- **Bridgecrew/Prisma Cloud**: Comprehensive code-to-cloud security
 
 ## Implementation Steps
 
@@ -121,25 +125,30 @@ module "cloud_security" {
 - [ ] Implement security information and event management (SIEM)
 - [ ] Configure log retention policies
 
-## Recommended Tools and Integrations
+## Recommended Tools and Integrations (2024-2025 Current)
 
-1. Security Scanning
-   - Trivy
-   - Snyk
-   - Aqua Security
-   - Prisma Cloud
+### 1. Security Scanning (Next Generation)
+   - **Container/IaC Scanning**: Trivy, Snyk, Checkov, Bridgecrew
+   - **Application Security**: Veracode, Checkmarx, SonarQube Security
+   - **Cloud Security**: Prisma Cloud, Lacework, Wiz, Orca Security
+   - **Supply Chain**: SLSA framework, Sigstore, CycloneDX SBOM
 
-2. Compliance Automation
-   - Terraform Compliance
-   - Inspec
-   - Prowler
-   - ScoutSuite
+### 2. Compliance Automation (Policy-as-Code)
+   - **Multi-cloud**: Cloud Custodian, Terraform Sentinel
+   - **Infrastructure**: Chef InSpec, AWS Config Rules, Falco
+   - **Cloud Assessment**: Prowler, Scout Suite, CloudMapper
+   - **Kubernetes**: Polaris, Falco, OPA Gatekeeper
 
-3. Secret Management
-   - HashiCorp Vault
-   - AWS Secrets Manager
-   - Azure Key Vault
-   - Google Secret Manager
+### 3. Secret Management (Zero Trust)
+   - **Enterprise**: HashiCorp Vault, CyberArk Conjur
+   - **Cloud Native**: AWS Secrets Manager, Azure Key Vault, Google Secret Manager
+   - **Kubernetes**: External Secrets Operator, Sealed Secrets
+   - **DevOps Integration**: GitLab CI secrets, GitHub Actions secrets
+
+### 4. Identity and Access Management (Modern)
+   - **Cloud Identity**: Okta, Auth0, Azure AD, AWS IAM Identity Center
+   - **Privileged Access**: CyberArk, BeyondTrust, HashiCorp Boundary
+   - **Zero Trust Network**: Zscaler, Palo Alto Prisma Access
 
 ## Continuous Improvement
 

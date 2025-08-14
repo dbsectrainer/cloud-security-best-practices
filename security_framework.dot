@@ -3,46 +3,48 @@ digraph SecurityFramework {
     node [shape=box, style=rounded, fontname="Arial", margin="0.3,0.1"];
     edge [fontname="Arial"];
 
-    // Main Components
-    Strategy [label="Strategic Security Vision", style=filled, fillcolor=lightblue];
-    Principles [label="Foundational Principles"];
-    Architecture [label="Security Architecture"];
-    Controls [label="Security Controls"];
-    ThreatMgmt [label="Threat Management"];
-    Tech [label="Advanced Technologies"];
-    Compliance [label="Compliance & Governance"];
-    Metrics [label="Security Metrics"];
+    // Main Components (Updated for 2024-2025)
+    Strategy [label="Strategic Security Vision\n(NIST CSF 2.0)", style=filled, fillcolor=lightblue];
+    Principles [label="Foundational Principles\n(Zero Trust + AI Security)"];
+    Architecture [label="Security Architecture\n(Cloud-Native)"];
+    Controls [label="Security Controls\n(Policy-as-Code)"];
+    ThreatMgmt [label="AI-Enhanced Threat\nManagement"];
+    Tech [label="Advanced Technologies\n(LLM Security)"];
+    Compliance [label="Compliance & Governance\n(AI Act + PCI-DSS 4.0)"];
+    Metrics [label="Security Metrics\n(AI-Driven Analytics)"];
     
-    // Subcomponents
+    // Enhanced Subcomponents for 2024-2025
     node [shape=box, style="rounded,filled", fillcolor=lightgrey];
-    IAM [label="Identity & Access\nManagement"];
-    Network [label="Network Security"];
-    Data [label="Data Protection"];
-    ML [label="Machine Learning"];
-    AI [label="Artificial Intelligence"];
-    SOC [label="Security Operations"];
+    IAM [label="Identity & Access\nManagement\n(Passwordless)"];
+    Network [label="Network Security\n(SASE/SSE)"];
+    Data [label="Data Protection\n(Quantum-Ready)"];
+    ML [label="Machine Learning\n(Adversarial Protection)"];
+    AI [label="AI Security Framework\n(LLM Governance)"];
+    SOC [label="Security Operations\n(AI-Powered SOC)"];
+    Supply [label="Supply Chain\n(SBOM/SLSA)"];
     
     // Relationships
     Strategy -> {Principles, Architecture, Controls} [dir=forward];
-    Principles -> {IAM, Network, Data} [dir=forward];
-    Architecture -> {IAM, Network, Data} [dir=forward];
+    Principles -> {IAM, Network, Data, Supply} [dir=forward];
+    Architecture -> {IAM, Network, Data, Supply} [dir=forward];
     Controls -> ThreatMgmt [dir=forward];
     ThreatMgmt -> {SOC, ML, AI} [dir=forward];
     {ML, AI} -> Metrics [dir=forward];
-    {IAM, Network, Data} -> Compliance [dir=forward];
+    {IAM, Network, Data, Supply} -> Compliance [dir=forward];
     
-    // Subgraph for Metrics
+    // Enhanced Metrics Subgraph
     subgraph cluster_metrics {
         style=dashed;
-        label="Key Performance Indicators";
-        MTTD [label="Mean Time to\nDetect"];
-        MTTR [label="Mean Time to\nRespond"];
+        label="2024-2025 KPIs";
+        MTTD [label="AI-Enhanced\nMTTD"];
+        MTTR [label="Automated\nMTTR"];
         Risk [label="Risk Mitigation\nEffectiveness"];
-        Metrics -> {MTTD, MTTR, Risk} [dir=forward];
+        AIGov [label="AI Governance\nScore"];
+        Metrics -> {MTTD, MTTR, Risk, AIGov} [dir=forward];
     }
 
     // Add invisible edges to improve layout
     edge [style=invis];
-    IAM -> Network -> Data;
+    IAM -> Network -> Data -> Supply;
     ML -> AI;
 }

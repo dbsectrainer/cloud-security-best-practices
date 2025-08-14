@@ -10,15 +10,16 @@ digraph RiskManagement {
     Mitigation [label="Risk Mitigation", style=filled, fillcolor=lightblue];
     Monitoring [label="Continuous Monitoring", style=filled, fillcolor=lightblue];
 
-    // Risk Categories
+    // Risk Categories (Enhanced 2024-2025)
     subgraph cluster_categories {
-        label="Risk Categories";
+        label="Risk Categories (2024-2025)";
         style=dashed;
         node [style=filled, fillcolor=lightgrey];
-        Technical [label="Technical Risks"];
-        Operational [label="Operational Risks"];
-        Strategic [label="Strategic Risks"];
-        Compliance [label="Compliance Risks"];
+        Technical [label="Technical Risks\n(AI/ML Security)"];
+        Operational [label="Operational Risks\n(Human + AI)"];
+        Strategic [label="Strategic Risks\n(Quantum + Geopolitical)"];
+        Compliance [label="Compliance Risks\n(AI Act + Privacy)"];
+        Supply [label="Supply Chain\n(AI Models + Code)"];
     }
 
     // Risk Evaluation
@@ -42,14 +43,14 @@ digraph RiskManagement {
         Compensating [label="Compensating\nControls"];
     }
 
-    // Monitoring Components
+    // Monitoring Components (AI-Enhanced)
     subgraph cluster_monitoring {
-        label="Monitoring System";
+        label="AI-Enhanced Monitoring";
         style=dashed;
         node [style=filled, fillcolor=lightgreen];
-        RealTime [label="Real-time\nDetection"];
-        Predictive [label="Predictive\nModeling"];
-        Reporting [label="Risk\nReporting"];
+        RealTime [label="Real-time\nAI Detection"];
+        Predictive [label="ML Predictive\nModeling"];
+        Reporting [label="Automated\nRisk Reporting"];
     }
 
     // Main Process Flow
@@ -58,9 +59,9 @@ digraph RiskManagement {
     Mitigation -> Monitoring;
     Monitoring -> Identification [constraint=false];
 
-    // Risk Category Connections
-    Identification -> {Technical, Operational, Strategic, Compliance} [style=dotted];
-    {Technical, Operational, Strategic, Compliance} -> Assessment;
+    // Risk Category Connections (Include Supply Chain)
+    Identification -> {Technical, Operational, Strategic, Compliance, Supply} [style=dotted];
+    {Technical, Operational, Strategic, Compliance, Supply} -> Assessment;
 
     // Evaluation Process
     Assessment -> {Likelihood, Impact} [style=dotted];

@@ -1,12 +1,13 @@
-# Comprehensive Vendor Security Assessment Framework
+# Comprehensive Vendor Security Assessment Framework (2024-2025 Updated)
 
 ## 1. Purpose and Scope
-- Evaluate Third-Party Security Risks
-- Ensure Vendor Compliance
-- Protect Organizational Assets
-- Maintain Security Integrity
+- Evaluate Third-Party Security Risks with AI/ML considerations
+- Ensure Vendor Compliance with current regulations
+- Protect Organizational Assets including AI systems and data
+- Maintain Security Integrity across supply chain
+- Assess AI/ML model security and governance
 
-## 2. Vendor Security Assessment Methodology
+## 2. Vendor Security Assessment Methodology (Enhanced for 2024-2025)
 ```hcl
 module "vendor_security_assessment" {
   source = "./vendor-security-modules"
@@ -16,28 +17,35 @@ module "vendor_security_assessment" {
       weight = 0.3
       evaluation_areas = [
         "data_protection",
-        "access_management",
-        "encryption",
-        "incident_response"
+        "access_management", 
+        "zero_trust_implementation",
+        "ai_ml_security",
+        "encryption_quantum_ready",
+        "incident_response",
+        "supply_chain_security"
       ]
     }
 
-    compliance = {
-      weight = 0.2
+    compliance_2024_2025 = {
+      weight = 0.25
       frameworks = [
-        "GDPR",
-        "HIPAA",
-        "SOC 2",
-        "ISO 27001"
+        "GDPR_with_AI_provisions",
+        "HIPAA_cloud_AI_updated",
+        "SOC_2_with_AI_governance", 
+        "ISO_27001_2022",
+        "PCI_DSS_v4_0",
+        "EU_AI_Act",
+        "NIST_AI_RMF_1_0"
       ]
     }
 
     operational_resilience = {
       weight = 0.2
       metrics = [
-        "uptime_guarantee",
-        "disaster_recovery",
-        "business_continuity"
+        "uptime_guarantee_99_99",
+        "disaster_recovery_rto_rpo",
+        "business_continuity",
+        "cyber_resilience"
       ]
     }
 
@@ -50,46 +58,61 @@ module "vendor_security_assessment" {
       ]
     }
 
-    technical_capabilities = {
-      weight = 0.2
+    ai_ml_security = {
+      weight = 0.15
       assessment_areas = [
-        "technology_stack",
+        "ai_model_security",
+        "data_poisoning_protection", 
+        "adversarial_attack_mitigation",
+        "llm_security_controls",
+        "ai_governance_framework",
+        "bias_detection_mitigation"
+      ]
+    }
+
+    technical_capabilities = {
+      weight = 0.1
+      assessment_areas = [
+        "technology_stack_modern",
+        "cloud_native_architecture",
+        "zero_trust_implementation", 
         "innovation_potential",
-        "scalability"
+        "scalability",
+        "quantum_ready_cryptography"
       ]
     }
   }
 
   risk_scoring = {
-    method = "weighted_comprehensive_evaluation"
+    method = "weighted_comprehensive_evaluation_ai_enhanced"
     threshold = {
-      high_risk = "> 0.7"
-      medium_risk = "0.4 - 0.7"
-      low_risk = "< 0.4"
+      critical_risk = "> 0.8"
+      high_risk = "0.6 - 0.8" 
+      medium_risk = "0.3 - 0.6"
+      low_risk = "< 0.3"
     }
   }
 }
 ```
 
-## 3. Assessment Domains
+## 3. Assessment Domains (2024-2025 Enhanced)
 
 ### Security Controls Evaluation
-- Data Protection Mechanisms
-- Access Management Practices
-- Encryption Standards
-- Incident Response Capabilities
-- Vulnerability Management
+- **Data Protection**: Encryption at rest/transit, data residency, quantum-ready cryptography
+- **Access Management**: Zero Trust implementation, MFA, privileged access management
+- **AI/ML Security**: Model protection, adversarial attack resistance, data poisoning prevention
+- **Incident Response**: 24/7 SOC, automated response, threat intelligence integration
+- **Vulnerability Management**: Continuous scanning, zero-day protection, patch management
 
-### Compliance Verification
-- Regulatory Compliance
-- Industry Standard Adherence
-- Audit Trail Maintenance
-- Transparency in Reporting
+### Compliance Verification (Current Standards)
+- **Regulatory Compliance**: GDPR with AI provisions, PCI-DSS v4.0, HIPAA updates
+- **AI Governance**: EU AI Act compliance, NIST AI RMF implementation
+- **Industry Standards**: ISO 27001:2022, SOC 2 with AI considerations
+- **Audit Trail**: Immutable logging, real-time monitoring, compliance reporting
 
-### Operational Resilience
-- Service Uptime Guarantees
-- Disaster Recovery Plans
-- Business Continuity Strategies
+### Operational Resilience (Modern Requirements)
+- **Service Guarantees**: 99.99% uptime SLA, performance metrics
+- **Disaster Recovery**: Multi-region backup, automated failover, RTO/RPO < 1 hour
 - Redundancy Mechanisms
 
 ### Technical Capabilities

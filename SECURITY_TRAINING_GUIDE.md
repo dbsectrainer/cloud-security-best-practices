@@ -1,12 +1,13 @@
-# Comprehensive Cloud Security Training Guide
+# Comprehensive Cloud Security Training Guide (2024-2025 Updated)
 
 ## 1. Training Program Objectives
-- Enhance Security Awareness
-- Develop Technical Competencies
-- Foster Security-First Culture
-- Reduce Human-Driven Security Risks
+- Enhance Security Awareness with AI/ML security considerations
+- Develop Technical Competencies for cloud-native and AI systems
+- Foster Security-First Culture with Zero Trust mindset
+- Reduce Human-Driven Security Risks including AI-related threats
+- Build Quantum-Ready Security Expertise
 
-## 2. Training Framework
+## 2. Training Framework (Enhanced for 2024-2025)
 ```hcl
 module "security_training_program" {
   source = "./security-training-modules"
@@ -14,30 +15,35 @@ module "security_training_program" {
   training_components = {
     foundational_security = {
       audience = ["all_employees"]
-      frequency = "quarterly"
+      frequency = "quarterly" 
       delivery_methods = [
-        "online_modules",
+        "online_modules_ai_powered",
         "interactive_workshops",
-        "simulation_exercises"
+        "simulation_exercises",
+        "phishing_simulations",
+        "ai_prompt_injection_awareness"
       ]
     }
 
     advanced_technical_training = {
-      audience = ["it_security", "developers", "cloud_engineers"]
+      audience = ["it_security", "developers", "cloud_engineers", "ai_ml_engineers"]
       frequency = "bi-annually"
       specialization_tracks = [
-        "cloud_security",
-        "application_security",
-        "incident_response"
+        "cloud_native_security",
+        "ai_ml_security_engineering",
+        "zero_trust_architecture",
+        "devsecops_advanced",
+        "incident_response_automation",
+        "quantum_cryptography_transition"
       ]
     }
 
     leadership_security_awareness = {
-      audience = ["executives", "management"]
+      audience = ["executives", "management", "board_members"]
       frequency = "annually"
       focus_areas = [
-        "strategic_risk_management",
-        "compliance_governance",
+        "strategic_risk_management_ai_era",
+        "compliance_governance_2024_2025",
         "security_investment_strategies"
       ]
     }
@@ -51,47 +57,47 @@ module "security_training_program" {
 }
 ```
 
-## 3. Training Curriculum Modules
+## 3. Training Curriculum Modules (2024-2025 Enhanced)
 
-### Foundational Security Awareness
-- Cybersecurity Basics
-- Social Engineering Awareness
-- Password Security
-- Phishing Detection
-- Data Protection Principles
+### Foundational Security Awareness (AI-Era Updated)
+- **Cybersecurity Basics**: Zero Trust principles, AI threat landscape
+- **AI Security Awareness**: LLM prompt injection, AI deepfake detection
+- **Social Engineering**: AI-powered attacks, voice cloning, deepfake detection
+- **Password Security**: Passwordless authentication, passkeys, biometrics
+- **Data Protection**: Privacy-preserving ML, federated learning, AI data governance
 
-### Cloud Security Fundamentals
-- Cloud Shared Responsibility Model
-- Identity and Access Management
-- Network Security
-- Encryption Principles
-- Compliance Requirements
+### Cloud-Native Security Fundamentals
+- **Cloud Shared Responsibility**: Updated for AI/ML services and containers
+- **Identity and Access Management**: Zero Trust, FIDO2, passwordless authentication
+- **Network Security**: SASE/SSE, micro-segmentation, service mesh security
+- **Encryption**: Quantum-ready cryptography, homomorphic encryption
+- **Compliance**: GDPR AI provisions, PCI-DSS v4.0, EU AI Act
 
-### Technical Security Skills
-- Secure Coding Practices
-- Cloud Configuration Security
-- Vulnerability Assessment
-- Threat Modeling
-- Incident Response Techniques
+### Technical Security Skills (Modern Stack)
+- **Secure Coding**: OWASP Top 10 2024, AI-specific vulnerabilities
+- **DevSecOps**: Policy-as-code, SLSA framework, SBOM generation
+- **Cloud Configuration**: CNAPP, CSPM, container security best practices
+- **AI/ML Security**: Model validation, adversarial testing, AI red teaming
+- **Incident Response**: AI-powered SOC, automated response, threat hunting
 
-## 4. Training Delivery Methods
-- Online Learning Platforms
-- Interactive Workshops
-- Hands-on Labs
-- Simulation Exercises
-- Capture The Flag (CTF) Competitions
-- Webinars and Expert Sessions
+## 4. Training Delivery Methods (Current Generation)
+- **AI-Powered Learning**: Personalized learning paths, adaptive assessments
+- **Interactive Platforms**: Immersive VR security training, gamification
+- **Hands-on Labs**: Cloud sandboxes, Kubernetes security labs, AI model testing
+- **Live Fire Exercises**: Red team vs blue team, AI attack simulations
+- **Capture The Flag**: AI security challenges, cloud-native CTFs
+- **Expert Sessions**: Industry leaders, AI security researchers, compliance experts
 
-## 5. Skill Level Progression
-### Beginner Level
-- Basic Security Awareness
-- Fundamental Threat Understanding
-- Compliance Basics
+## 5. Skill Level Progression (2024-2025 Competency Model)
+### Beginner Level (Security Foundations)
+- **Security Awareness**: Basic threats, AI security basics, social engineering
+- **Compliance Fundamentals**: Current regulations, AI governance principles
+- **Cloud Basics**: Shared responsibility, basic security controls
 
-### Intermediate Level
-- Advanced Threat Detection
-- Cloud Security Configurations
-- Security Tool Proficiency
+### Intermediate Level (Technical Proficiency)
+- **Advanced Threat Detection**: AI-powered SIEM, behavioral analytics
+- **Cloud Security**: Multi-cloud CSPM, container security, serverless security
+- **AI/ML Security**: Model protection, adversarial robustness, data privacy
 
 ### Advanced Level
 - Threat Hunting
