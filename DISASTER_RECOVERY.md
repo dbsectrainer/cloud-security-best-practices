@@ -1,3 +1,8 @@
+---
+title: Disaster Recovery
+layout: default
+---
+
 # Cloud Disaster Recovery Strategy
 
 ## 1. Disaster Recovery Objectives

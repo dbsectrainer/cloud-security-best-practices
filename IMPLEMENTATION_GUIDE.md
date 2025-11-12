@@ -1,3 +1,8 @@
+---
+title: Implementation Guide
+layout: default
+---
+
 # Cloud Security Implementation Guide
 
 ## Technical Architecture Overview

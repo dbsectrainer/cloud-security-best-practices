@@ -1,3 +1,8 @@
+---
+title: Architecture and Diagrams
+layout: default
+---
+
 # Cloud Security Architecture and Diagrams
 
 ## System Architecture Overview

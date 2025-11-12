@@ -1,3 +1,8 @@
+---
+title: Security Framework
+layout: default
+---
+
 # Comprehensive Cloud Security Framework
 
 ## Strategic Security Vision

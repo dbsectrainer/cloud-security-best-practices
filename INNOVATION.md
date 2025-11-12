@@ -1,3 +1,8 @@
+---
+title: Security Innovation
+layout: default
+---
+
 # Cloud Security Innovations: Transforming Security Paradigms (2024-2025 Update)
 
 ## Executive Summary

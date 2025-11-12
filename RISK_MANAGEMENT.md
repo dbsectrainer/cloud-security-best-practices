@@ -1,3 +1,8 @@
+---
+title: Risk Management
+layout: default
+---
+
 # Cloud Security Risk Management Framework (2024-2025 Enhanced)
 
 ## 1. Risk Management Objectives (AI-Era Updated)

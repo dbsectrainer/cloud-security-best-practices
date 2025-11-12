@@ -1,3 +1,8 @@
+---
+title: Incident Response Plan
+layout: default
+---
+
 # Cloud Security Incident Response Plan
 
 ## 1. Purpose and Scope
