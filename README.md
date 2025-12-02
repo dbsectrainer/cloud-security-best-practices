@@ -29,12 +29,12 @@
 
 ## 📊 Key Performance Indicators
 
-| Metric | Achievement |
-|--------|------------|
-| Compliance Score | 99.9% |
-| Incident Response Time | ⬇️ 80% Reduction |
-| Security Automation | 95% Coverage |
-| Infrastructure Availability | 99.99% |
+| Metric                      | Achievement      |
+| --------------------------- | ---------------- |
+| Compliance Score            | 99.9%            |
+| Incident Response Time      | ⬇️ 80% Reduction |
+| Security Automation         | 95% Coverage     |
+| Infrastructure Availability | 99.99%           |
 
 ## 🎯 Quick Start
 
@@ -51,21 +51,25 @@ graph LR
 ### Essential Documentation
 
 1. 📘 [Implementation Guide](IMPLEMENTATION_GUIDE.md)
+
    - Step-by-step deployment guide
    - Infrastructure as Code examples
    - Best practices implementation
 
 2. 🛡️ [Security Framework](SECURITY_FRAMEWORK.md)
+
    - Zero Trust architecture
    - Access control patterns
    - Security principles
 
 3. ✅ [Compliance Framework](COMPLIANCE.md)
+
    - Regulatory compliance
    - Automated validation
    - Compliance monitoring
 
 4. 🏗️ [Architecture & Diagrams](ARCHITECTURE_AND_DIAGRAMS.md)
+
    - System visualizations
    - Network security
    - Control documentation
@@ -78,6 +82,7 @@ graph LR
 ## 💡 Innovation Focus
 
 Explore cutting-edge security approaches in our [Innovation Documentation](INNOVATION.md):
+
 - AI-powered threat detection
 - Quantum-resistant encryption
 - Blockchain security integration
@@ -86,17 +91,20 @@ Explore cutting-edge security approaches in our [Innovation Documentation](INNOV
 ## 🚀 Technologies
 
 ### Cloud Platforms
+
 - Amazon Web Services (AWS)
 - Microsoft Azure
 - Google Cloud Platform (GCP)
 
 ### Security Tools
+
 - Terraform & CloudFormation
 - Kubernetes Security
 - Advanced SIEM Integration
 - Zero Trust Implementation
 
 ### Compliance Frameworks
+
 - GDPR (General Data Protection Regulation)
 - HIPAA (Health Insurance Portability and Accountability Act)
 - PCI-DSS (Payment Card Industry Data Security Standard)
@@ -131,6 +139,7 @@ Explore cutting-edge security approaches in our [Innovation Documentation](INNOV
 ## 🤝 Contributing
 
 We welcome contributions! See our [Contributing Guidelines](CONTRIBUTING.md) for details on:
+
 - Code of Conduct
 - Development Process
 - Pull Request Guidelines
@@ -151,3 +160,7 @@ We welcome contributions! See our [Contributing Guidelines](CONTRIBUTING.md) for
 <div align="center">
   <b>Security is not just a feature - it's a continuous journey of improvement and adaptation.</b>
 </div>
+
+## 👤 Author & Maintainer
+
+This repository is maintained by [Donnivis Baker](https://github.com/dbsectrainer). For questions or feedback, please open an issue or reach out directly.
