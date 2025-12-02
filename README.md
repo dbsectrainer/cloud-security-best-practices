@@ -1,10 +1,13 @@
 # Cloud Security Documentation Project
 
+[![Live Documentation](https://img.shields.io/badge/docs-live-brightgreen.svg)](https://dbsectrainer.github.io/cloud-security-best-practices/)
 [![Documentation Status](https://img.shields.io/badge/docs-current-brightgreen.svg)](IMPLEMENTATION_GUIDE.md)
 [![Cloud Platforms](https://img.shields.io/badge/clouds-AWS%20%7C%20Azure%20%7C%20GCP-blue.svg)](ARCHITECTURE_AND_DIAGRAMS.md)
 [![Security](https://img.shields.io/badge/security-zero%20trust-success.svg)](SECURITY_FRAMEWORK.md)
 [![Compliance](https://img.shields.io/badge/compliance-GDPR%20%7C%20HIPAA%20%7C%20PCI%20%7C%20SOC2-orange.svg)](COMPLIANCE.md)
 [![Last Update](https://img.shields.io/badge/last%20update-August%202024-green.svg)](INNOVATION.md)
+
+> **View the live documentation site**: [https://dbsectrainer.github.io/cloud-security-best-practices/](https://dbsectrainer.github.io/cloud-security-best-practices/)
 
 <div align="center">
   <img src="security_framework.svg" alt="Security Framework Overview" width="600">
