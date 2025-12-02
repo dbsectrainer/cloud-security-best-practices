@@ -4,6 +4,9 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
+# Development scripts
+build_local.py
+
 # Ruby dependencies
 .bundle/
 vendor/

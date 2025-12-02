@@ -1,3 +1,8 @@
+---
+title: Security Testing Guide
+layout: default
+---
+
 # Comprehensive Security Testing Guide
 
 ## Overview

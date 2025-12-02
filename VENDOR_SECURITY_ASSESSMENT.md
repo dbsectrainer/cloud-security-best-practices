@@ -1,3 +1,8 @@
+---
+title: Vendor Security Assessment
+layout: default
+---
+
 # Comprehensive Vendor Security Assessment Framework (2024-2025 Updated)
 
 ## 1. Purpose and Scope

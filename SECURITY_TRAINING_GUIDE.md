@@ -1,3 +1,8 @@
+---
+title: Security Training Guide
+layout: default
+---
+
 # Comprehensive Cloud Security Training Guide (2024-2025 Updated)
 
 ## 1. Training Program Objectives

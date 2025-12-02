@@ -1,3 +1,8 @@
+---
+title: Compliance and Governance
+layout: default
+---
+
 # Regulatory Compliance and Governance Framework
 
 ## Comprehensive Compliance Strategy

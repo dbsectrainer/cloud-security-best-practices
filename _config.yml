@@ -1,7 +1,7 @@
-title: Cloud Security Documentation (2024-2025)
-description: Comprehensive cloud security strategies, AI-enhanced best practices, and innovative approaches for modern enterprise security
+title: Cloud Security Best Practices
+description: Comprehensive cloud security strategies, frameworks, and implementation guides for senior engineers, managers, and executives. Multi-cloud security across AWS, Azure, and GCP.
 baseurl: "/cloud-security-best-practices"
-url: ""
+url: "https://dbsectrainer.github.io"
 
 # Build settings
 markdown: kramdown
@@ -46,15 +46,13 @@ relative_links:
   enabled: true
   collections: true
 
-# SEO
+# SEO & Social
 twitter:
-  username: yourusername
   card: summary_large_image
 social:
-  name: Your Name
+  name: Cloud Security Best Practices
   links:
-    - https://github.com/yourusername
-    - https://twitter.com/yourusername
+    - https://github.com/dbsectrainer/cloud-security-best-practices
 
 # Analytics
 google_analytics: # Add your Google Analytics tracking ID
