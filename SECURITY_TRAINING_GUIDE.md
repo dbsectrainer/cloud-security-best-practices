@@ -6,6 +6,7 @@ layout: default
 # Comprehensive Cloud Security Training Guide (2024-2025 Updated)
 
 ## 1. Training Program Objectives
+
 - Enhance Security Awareness with AI/ML security considerations
 - Develop Technical Competencies for cloud-native and AI systems
 - Foster Security-First Culture with Zero Trust mindset
@@ -13,6 +14,7 @@ layout: default
 - Build Quantum-Ready Security Expertise
 
 ## 2. Training Framework (Enhanced for 2024-2025)
+
 ```hcl
 module "security_training_program" {
   source = "./security-training-modules"
@@ -20,7 +22,7 @@ module "security_training_program" {
   training_components = {
     foundational_security = {
       audience = ["all_employees"]
-      frequency = "quarterly" 
+      frequency = "quarterly"
       delivery_methods = [
         "online_modules_ai_powered",
         "interactive_workshops",
@@ -65,6 +67,7 @@ module "security_training_program" {
 ## 3. Training Curriculum Modules (2024-2025 Enhanced)
 
 ### Foundational Security Awareness (AI-Era Updated)
+
 - **Cybersecurity Basics**: Zero Trust principles, AI threat landscape
 - **AI Security Awareness**: LLM prompt injection, AI deepfake detection
 - **Social Engineering**: AI-powered attacks, voice cloning, deepfake detection
@@ -72,6 +75,7 @@ module "security_training_program" {
 - **Data Protection**: Privacy-preserving ML, federated learning, AI data governance
 
 ### Cloud-Native Security Fundamentals
+
 - **Cloud Shared Responsibility**: Updated for AI/ML services and containers
 - **Identity and Access Management**: Zero Trust, FIDO2, passwordless authentication
 - **Network Security**: SASE/SSE, micro-segmentation, service mesh security
@@ -79,6 +83,7 @@ module "security_training_program" {
 - **Compliance**: GDPR AI provisions, PCI-DSS v4.0, EU AI Act
 
 ### Technical Security Skills (Modern Stack)
+
 - **Secure Coding**: OWASP Top 10 2024, AI-specific vulnerabilities
 - **DevSecOps**: Policy-as-code, SLSA framework, SBOM generation
 - **Cloud Configuration**: CNAPP, CSPM, container security best practices
@@ -86,6 +91,7 @@ module "security_training_program" {
 - **Incident Response**: AI-powered SOC, automated response, threat hunting
 
 ## 4. Training Delivery Methods (Current Generation)
+
 - **AI-Powered Learning**: Personalized learning paths, adaptive assessments
 - **Interactive Platforms**: Immersive VR security training, gamification
 - **Hands-on Labs**: Cloud sandboxes, Kubernetes security labs, AI model testing
@@ -94,22 +100,27 @@ module "security_training_program" {
 - **Expert Sessions**: Industry leaders, AI security researchers, compliance experts
 
 ## 5. Skill Level Progression (2024-2025 Competency Model)
+
 ### Beginner Level (Security Foundations)
+
 - **Security Awareness**: Basic threats, AI security basics, social engineering
 - **Compliance Fundamentals**: Current regulations, AI governance principles
 - **Cloud Basics**: Shared responsibility, basic security controls
 
 ### Intermediate Level (Technical Proficiency)
+
 - **Advanced Threat Detection**: AI-powered SIEM, behavioral analytics
 - **Cloud Security**: Multi-cloud CSPM, container security, serverless security
 - **AI/ML Security**: Model protection, adversarial robustness, data privacy
 
 ### Advanced Level
+
 - Threat Hunting
 - Security Architecture Design
 - Incident Response Leadership
 
 ## 6. Certification Tracks
+
 - Cloud Security Certifications
   - AWS Certified Security
   - Azure Security Engineer
@@ -120,6 +131,7 @@ module "security_training_program" {
   - CEH (Certified Ethical Hacker)
 
 ## 7. Continuous Learning Mechanisms
+
 - Regular Security Updates
 - Threat Intelligence Sharing
 - Emerging Technology Workshops
@@ -127,19 +139,23 @@ module "security_training_program" {
 - Research and Development Exposure
 
 ## 8. Practical Training Components
+
 ### Simulation Scenarios
+
 - Phishing Attack Simulations
 - Incident Response Drills
 - Social Engineering Tests
 - Cloud Misconfiguration Exercises
 
 ## 9. Measurement and Evaluation
+
 - Knowledge Assessment Tests
 - Practical Skill Demonstrations
 - Security Behavior Metrics
 - Training Effectiveness Surveys
 
 ## 10. Technology and Tools Training
+
 - Security Information Tools
 - Threat Detection Platforms
 - Cloud Security Consoles
@@ -147,21 +163,25 @@ module "security_training_program" {
 - Security Orchestration Platforms
 
 ## 11. Compliance and Governance Training
+
 - Regulatory Requirement Understanding
 - Audit Preparation
 - Reporting Mechanisms
 - Ethical Considerations
 
 ## 12. Emerging Technology Security
+
 - AI and Machine Learning Security
 - IoT Security Challenges
 - Quantum Computing Threats
 - Blockchain Security
 
 ## Conclusion
+
 A dynamic, comprehensive security training program that transforms employees into proactive security champions.
 
 ### Key Performance Indicators
+
 - Security Awareness Levels
 - Incident Reduction
 - Skills Acquisition Rate
