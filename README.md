@@ -4,13 +4,13 @@
 [![Cloud Platforms](https://img.shields.io/badge/clouds-AWS%20%7C%20Azure%20%7C%20GCP-blue.svg)](ARCHITECTURE_AND_DIAGRAMS.md)
 [![Security](https://img.shields.io/badge/security-zero%20trust-success.svg)](SECURITY_FRAMEWORK.md)
 [![Compliance](https://img.shields.io/badge/compliance-GDPR%20%7C%20HIPAA%20%7C%20PCI%20%7C%20SOC2-orange.svg)](COMPLIANCE.md)
-[![Last Update](https://img.shields.io/badge/last%20update-August%202024-green.svg)](INNOVATION.md)
+[![Last Update](https://img.shields.io/badge/last%20update-May%202026-green.svg)](INNOVATION.md)
 
 <div align="center">
   <img src="security_framework.svg" alt="Security Framework Overview" width="600">
 </div>
 
-## 🌟 Project Highlights (2024-2025 Enhanced)
+## 🌟 Project Highlights (2026 Enhanced)
 
 - **Zero Trust Architecture**: Advanced security model with NIST 800-207 compliance
 - **Multi-Cloud Security**: Unified security across AWS, Azure, and Google Cloud with CNAPP
@@ -19,7 +19,7 @@
 - **Continuous Compliance**: Real-time monitoring with NIST CSF 2.0 alignment
 - **Quantum-Ready Security**: Post-quantum cryptography transition planning
 
-## 🆕 2024-2025 Critical Updates
+## 🆕 2026 Critical Updates
 
 - **NIST Cybersecurity Framework 2.0**: Updated governance function and enhanced guidelines
 - **AI/ML Security Framework**: Comprehensive protection for LLMs and AI systems
@@ -51,25 +51,21 @@ graph LR
 ### Essential Documentation
 
 1. 📘 [Implementation Guide](IMPLEMENTATION_GUIDE.md)
-
    - Step-by-step deployment guide
    - Infrastructure as Code examples
    - Best practices implementation
 
 2. 🛡️ [Security Framework](SECURITY_FRAMEWORK.md)
-
    - Zero Trust architecture
    - Access control patterns
    - Security principles
 
 3. ✅ [Compliance Framework](COMPLIANCE.md)
-
    - Regulatory compliance
    - Automated validation
    - Compliance monitoring
 
 4. 🏗️ [Architecture & Diagrams](ARCHITECTURE_AND_DIAGRAMS.md)
-
    - System visualizations
    - Network security
    - Control documentation
@@ -97,6 +93,7 @@ For federal agencies and contractors pursuing FedRAMP authorization, this reposi
 - 📊 [**fedramp-30-days/aws-services-reference.md**](fedramp-30-days/aws-services-reference.md) — 40+ FedRAMP-authorized AWS services with control mappings
 
 **Key Features:**
+
 - Week 1: Foundation & assessment (CloudTrail, Config, Security Hub, GuardDuty)
 - Week 2: Network hardening (VPC, WAF, KMS, Secrets Manager)
 - Week 3: Application security (containers, SBOM, SAST/DAST, API security)
@@ -175,17 +172,18 @@ We welcome contributions! See our [Contributing Guidelines](CONTRIBUTING.md) for
 
 This repository is part of a comprehensive federal IT capability portfolio demonstrating real federal system engineering for agency buyers and contracting officers:
 
-| Showcase Project | Repository | Description | FedRAMP Level |
-|---|---|---|---|
-| **Secure RAG Pipeline** | [Secure-Generative-AI-Platform-on-AWS](https://github.com/dbsectrainer/Secure-Generative-AI-Platform-on-AWS) | AWS Bedrock + RAG with LLM guardrails, prompt injection protection, and audit logging | High |
-| **DevSecOps CI/CD** | [dod-cybersec-ops-framework](https://github.com/dbsectrainer/dod-cybersec-ops-framework) | DoD 8570 aligned NIST RMF pipeline with SBOM, SAST/DAST, and container security | Moderate-High |
-| **Zero Trust Architecture** | [AEGIS](https://github.com/dbsectrainer/AEGIS) | FedRAMP High + NIST 800-207 Zero Trust reference implementation with IAM, network, and threat modeling | High |
-| **FedRAMP Control Automation** | [nist_800_53_scanner](https://github.com/dbsectrainer/nist_800_53_scanner) | NIST 800-53 Rev 5 compliance scanner + Grafana dashboard for automated control verification | Moderate-High |
-| **Federal AI Governance** | [ai-safety-governance](https://github.com/dbsectrainer/ai-safety-governance) | EO 14110 / OMB M-24-10 aligned responsible AI governance platform with bias detection and audit trails | Moderate |
-| **CMMC 2.0 Dashboard** | [integrated-cyber-risk-compliance](https://github.com/dbsectrainer/integrated-cyber-risk-compliance) | CMMC 2.0 readiness assessment (17 domains, 110 practices) + NIST CSF radar chart and risk register | Moderate |
-| **FedRAMP 30-Day Guide** | [cloud-security-best-practices](https://github.com/dbsectrainer/cloud-security-best-practices) | This repository — day-by-day implementation path with control checklists and AWS service reference | — |
+| Showcase Project               | Repository                                                                                                   | Description                                                                                            | FedRAMP Level |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------- |
+| **Secure RAG Pipeline**        | [Secure-Generative-AI-Platform-on-AWS](https://github.com/dbsectrainer/Secure-Generative-AI-Platform-on-AWS) | AWS Bedrock + RAG with LLM guardrails, prompt injection protection, and audit logging                  | High          |
+| **DevSecOps CI/CD**            | [dod-cybersec-ops-framework](https://github.com/dbsectrainer/dod-cybersec-ops-framework)                     | DoD 8570 aligned NIST RMF pipeline with SBOM, SAST/DAST, and container security                        | Moderate-High |
+| **Zero Trust Architecture**    | [AEGIS](https://github.com/dbsectrainer/AEGIS)                                                               | FedRAMP High + NIST 800-207 Zero Trust reference implementation with IAM, network, and threat modeling | High          |
+| **FedRAMP Control Automation** | [nist_800_53_scanner](https://github.com/dbsectrainer/nist_800_53_scanner)                                   | NIST 800-53 Rev 5 compliance scanner + Grafana dashboard for automated control verification            | Moderate-High |
+| **Federal AI Governance**      | [ai-safety-governance](https://github.com/dbsectrainer/ai-safety-governance)                                 | EO 14110 / OMB M-24-10 aligned responsible AI governance platform with bias detection and audit trails | Moderate      |
+| **CMMC 2.0 Dashboard**         | [integrated-cyber-risk-compliance](https://github.com/dbsectrainer/integrated-cyber-risk-compliance)         | CMMC 2.0 readiness assessment (17 domains, 110 practices) + NIST CSF radar chart and risk register     | Moderate      |
+| **FedRAMP 30-Day Guide**       | [cloud-security-best-practices](https://github.com/dbsectrainer/cloud-security-best-practices)               | This repository — day-by-day implementation path with control checklists and AWS service reference     | —             |
 
 **Portfolio Highlights:**
+
 - ✅ 7 production-ready federal showcase projects
 - 📋 325+ NIST 800-53 controls mapped to implementation
 - 🔐 FedRAMP High alignment in 3+ repositories

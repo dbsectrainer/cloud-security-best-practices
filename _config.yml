@@ -21,8 +21,7 @@ kramdown:
 
 # Default layout
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
