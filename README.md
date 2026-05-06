@@ -88,6 +88,22 @@ Explore cutting-edge security approaches in our [Innovation Documentation](INNOV
 - Blockchain security integration
 - Edge computing security
 
+## 🏛️ FedRAMP Implementation Guide
+
+For federal agencies and contractors pursuing FedRAMP authorization, this repository includes a **30-day implementation roadmap**:
+
+- 📋 [**fedramp-30-days/README.md**](fedramp-30-days/README.md) — Day-by-day implementation path across 4 weeks
+- ✅ [**fedramp-30-days/control-checklist.md**](fedramp-30-days/control-checklist.md) — NIST 800-53 Moderate baseline checklist (325 controls)
+- 📊 [**fedramp-30-days/aws-services-reference.md**](fedramp-30-days/aws-services-reference.md) — 40+ FedRAMP-authorized AWS services with control mappings
+
+**Key Features:**
+- Week 1: Foundation & assessment (CloudTrail, Config, Security Hub, GuardDuty)
+- Week 2: Network hardening (VPC, WAF, KMS, Secrets Manager)
+- Week 3: Application security (containers, SBOM, SAST/DAST, API security)
+- Week 4: Documentation & ATO prep (SSP, POA&M, IR/CP plans, 3PAO engagement)
+
+This roadmap aligns with **NIST SP 800-53 Moderate baseline**, **FedRAMP authorization requirements**, and **AWS best practices** for government cloud deployments.
+
 ## 🚀 Technologies
 
 ### Cloud Platforms
@@ -154,6 +170,30 @@ We welcome contributions! See our [Contributing Guidelines](CONTRIBUTING.md) for
 - Open Source Security Community
 - Cloud Platform Partners
 - Security Research Contributors
+
+## 🏛️ BE EASY ENTERPRISES Federal Portfolio
+
+This repository is part of a comprehensive federal IT capability portfolio demonstrating real federal system engineering for agency buyers and contracting officers:
+
+| Showcase Project | Repository | Description | FedRAMP Level |
+|---|---|---|---|
+| **Secure RAG Pipeline** | [Secure-Generative-AI-Platform-on-AWS](https://github.com/dbsectrainer/Secure-Generative-AI-Platform-on-AWS) | AWS Bedrock + RAG with LLM guardrails, prompt injection protection, and audit logging | High |
+| **DevSecOps CI/CD** | [dod-cybersec-ops-framework](https://github.com/dbsectrainer/dod-cybersec-ops-framework) | DoD 8570 aligned NIST RMF pipeline with SBOM, SAST/DAST, and container security | Moderate-High |
+| **Zero Trust Architecture** | [AEGIS](https://github.com/dbsectrainer/AEGIS) | FedRAMP High + NIST 800-207 Zero Trust reference implementation with IAM, network, and threat modeling | High |
+| **FedRAMP Control Automation** | [nist_800_53_scanner](https://github.com/dbsectrainer/nist_800_53_scanner) | NIST 800-53 Rev 5 compliance scanner + Grafana dashboard for automated control verification | Moderate-High |
+| **Federal AI Governance** | [ai-safety-governance](https://github.com/dbsectrainer/ai-safety-governance) | EO 14110 / OMB M-24-10 aligned responsible AI governance platform with bias detection and audit trails | Moderate |
+| **CMMC 2.0 Dashboard** | [integrated-cyber-risk-compliance](https://github.com/dbsectrainer/integrated-cyber-risk-compliance) | CMMC 2.0 readiness assessment (17 domains, 110 practices) + NIST CSF radar chart and risk register | Moderate |
+| **FedRAMP 30-Day Guide** | [cloud-security-best-practices](https://github.com/dbsectrainer/cloud-security-best-practices) | This repository — day-by-day implementation path with control checklists and AWS service reference | — |
+
+**Portfolio Highlights:**
+- ✅ 7 production-ready federal showcase projects
+- 📋 325+ NIST 800-53 controls mapped to implementation
+- 🔐 FedRAMP High alignment in 3+ repositories
+- 🚀 AWS GovCloud (`us-gov-west-1`/`us-gov-east-1`) deployment patterns
+- 🛡️ Zero Trust, SBOM, supply chain security, and AI governance
+- 📊 Automated compliance monitoring and evidence collection
+
+**For Federal Agencies & Contractors:** These repositories demonstrate a complete federal-grade security engineering capability. Fork, reference, or reach out to discuss customization for your specific authority to operate (ATO).
 
 ---
 
