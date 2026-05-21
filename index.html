@@ -29,7 +29,11 @@ layout: null
     <!-- Navigation -->
     <nav class="navigation">
       <div class="nav-container">
-        <div class="nav-brand">
+        <a
+          class="nav-brand"
+          href="{{ '/' | relative_url }}"
+          aria-current="page"
+        >
           <svg
             width="32"
             height="32"
@@ -47,7 +51,7 @@ layout: null
             <circle cx="16" cy="16" r="3" fill="white" />
           </svg>
           <span class="nav-title">Cloud Security Framework</span>
-        </div>
+        </a>
         <ul class="nav-menu">
           <li>
             <a href="{{ '/' | relative_url }}" class="active">Overview</a>

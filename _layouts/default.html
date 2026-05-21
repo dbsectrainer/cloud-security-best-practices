@@ -27,12 +27,12 @@
       rel="stylesheet"
     />
 
-    <!-- Mermaid for Diagrams -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <!-- Mermaid for Diagrams (Rouge emits code.language-mermaid; Mermaid expects div.mermaid) -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         mermaid.initialize({
-          startOnLoad: true,
+          startOnLoad: false,
           theme: "default",
           themeVariables: {
             primaryColor: "#159957",
@@ -43,6 +43,30 @@
             tertiaryColor: "#fafbfc",
           },
         });
+
+        (async function () {
+          var nodeList = document.querySelectorAll(
+            "pre code.language-mermaid, pre code.language-mmd",
+          );
+          var nodes = [];
+          nodeList.forEach(function (codeEl) {
+            var diagram = codeEl.textContent;
+            var pre = codeEl.parentElement;
+            if (!pre || pre.tagName !== "PRE") return;
+            var container =
+              pre.closest("div.highlighter-rouge") ||
+              pre.closest(".highlight") ||
+              pre;
+            var mermaidEl = document.createElement("div");
+            mermaidEl.className = "mermaid";
+            mermaidEl.textContent = diagram;
+            container.replaceWith(mermaidEl);
+            nodes.push(mermaidEl);
+          });
+          if (nodes.length) {
+            await mermaid.run({ nodes: nodes });
+          }
+        })();
       });
     </script>
   </head>
@@ -50,7 +74,11 @@
     <!-- Navigation -->
     <nav class="navigation">
       <div class="nav-container">
-        <div class="nav-brand">
+        <a
+          class="nav-brand"
+          href="{{ '/' | relative_url }}"
+          {% if page.url == "/" or page.url == "/index.html" %}aria-current="page"{% endif %}
+        >
           <svg
             width="32"
             height="32"
@@ -68,13 +96,13 @@
             <circle cx="16" cy="16" r="3" fill="white" />
           </svg>
           <span class="nav-title">Cloud Security Framework</span>
-        </div>
+        </a>
         <ul class="nav-menu">
           <li>
             <a
               href="{{ '/' | relative_url }}"
               {% if page.url == "/" or page.url == "/index.html" %}class="active"{% endif %}
-              >Overview</
+              >Overview</a
             >
           </li>
           <li class="dropdown">

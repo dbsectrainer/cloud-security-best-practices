@@ -1,0 +1,3 @@
+# Markdown with Mermaid fences — Prettier can corrupt diagram syntax on format-on-save.
+# Add paths here when you introduce new Mermaid blocks.
+README.md
