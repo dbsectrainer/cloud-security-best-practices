@@ -118,6 +118,17 @@ body {
   font-weight: 600;
   font-size: 1.125rem;
   color: var(--text-color);
+  text-decoration: none;
+}
+
+.nav-brand:hover {
+  opacity: 0.92;
+}
+
+.nav-brand:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+  border-radius: var(--radius-md);
 }
 
 .nav-title {

@@ -136,7 +136,7 @@ module "security_testing_framework" {
 - Data encryption verification
 - Compliance rule enforcement
 
-## Security Testing Tools (2024-2025 Current Generation)
+## Security Testing Tools (2025-2026 Current Generation)
 
 ### Vulnerability Scanning (AI-Enhanced)
 
@@ -159,7 +159,7 @@ module "security_testing_framework" {
 - **Kubernetes**: Polaris, Falco, OPA Gatekeeper, Kube-bench
 - **Infrastructure**: Chef InSpec, AWS Config Rules, Bridgecrew
 
-### AI/ML Security Testing (Emerging 2024-2025)
+### AI/ML Security Testing (Emerging 2025-2026)
 
 - **AI Model Testing**: Adversarial Robustness Toolbox (ART), CleverHans
 - **LLM Security**: Garak, AI Red Team tools, Prompt injection testing

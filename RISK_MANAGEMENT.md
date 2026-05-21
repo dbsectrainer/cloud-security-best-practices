@@ -3,7 +3,7 @@ title: Risk Management
 layout: default
 ---
 
-# Cloud Security Risk Management Framework (2024-2025 Enhanced)
+# Cloud Security Risk Management Framework (2025-2026 Enhanced)
 
 ## 1. Risk Management Objectives (AI-Era Updated)
 
@@ -149,7 +149,7 @@ module "risk_management_framework" {
 - Role-Specific Risk Training
 - Continuous Learning Initiatives
 
-## 12. Emerging Risk Considerations (2024-2025 Critical)
+## 12. Emerging Risk Considerations (2025-2026 Critical)
 
 ### AI and Machine Learning Risks (Expanded)
 
@@ -172,7 +172,7 @@ module "risk_management_framework" {
 - **Quantum-Safe Transition**: Algorithm migration, hybrid security models
 - **Timeline Planning**: NIST post-quantum standards, implementation roadmaps
 
-### Geopolitical and Regulatory Risks (2024-2025)
+### Geopolitical and Regulatory Risks (2025-2026)
 
 - **Data Sovereignty**: Cross-border data restrictions, local data residency
 - **Regulatory Fragmentation**: GDPR, AI Act, state privacy laws, sector-specific regulations
@@ -181,7 +181,7 @@ module "risk_management_framework" {
 
 ## Conclusion
 
-A dynamic, AI-enhanced risk management approach that transforms potential threats into strategic opportunities for enhanced security and business resilience in the 2024-2025 threat landscape.
+A dynamic, AI-enhanced risk management approach that transforms potential threats into strategic opportunities for enhanced security and business resilience in the 2025-2026 threat landscape.
 
 ### Key Performance Indicators (AI-Enhanced)
 

@@ -10,9 +10,9 @@ digraph RiskManagement {
     Mitigation [label="Risk Mitigation", style=filled, fillcolor=lightblue];
     Monitoring [label="Continuous Monitoring", style=filled, fillcolor=lightblue];
 
-    // Risk Categories (Enhanced 2024-2025)
+    // Risk Categories (Enhanced 2025-2026)
     subgraph cluster_categories {
-        label="Risk Categories (2024-2025)";
+        label="Risk Categories (2025-2026)";
         style=dashed;
         node [style=filled, fillcolor=lightgrey];
         Technical [label="Technical Risks\n(AI/ML Security)"];

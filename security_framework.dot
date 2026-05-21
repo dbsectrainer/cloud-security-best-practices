@@ -3,7 +3,7 @@ digraph SecurityFramework {
     node [shape=box, style=rounded, fontname="Arial", margin="0.3,0.1"];
     edge [fontname="Arial"];
 
-    // Main Components (Updated for 2024-2025)
+    // Main Components (Updated for 2025-2026)
     Strategy [label="Strategic Security Vision\n(NIST CSF 2.0)", style=filled, fillcolor=lightblue];
     Principles [label="Foundational Principles\n(Zero Trust + AI Security)"];
     Architecture [label="Security Architecture\n(Cloud-Native)"];
@@ -13,7 +13,7 @@ digraph SecurityFramework {
     Compliance [label="Compliance & Governance\n(AI Act + PCI-DSS 4.0)"];
     Metrics [label="Security Metrics\n(AI-Driven Analytics)"];
     
-    // Enhanced Subcomponents for 2024-2025
+    // Enhanced Subcomponents for 2025-2026
     node [shape=box, style="rounded,filled", fillcolor=lightgrey];
     IAM [label="Identity & Access\nManagement\n(Passwordless)"];
     Network [label="Network Security\n(SASE/SSE)"];
@@ -35,7 +35,7 @@ digraph SecurityFramework {
     // Enhanced Metrics Subgraph
     subgraph cluster_metrics {
         style=dashed;
-        label="2024-2025 KPIs";
+        label="2025-2026 KPIs";
         MTTD [label="AI-Enhanced\nMTTD"];
         MTTR [label="Automated\nMTTR"];
         Risk [label="Risk Mitigation\nEffectiveness"];

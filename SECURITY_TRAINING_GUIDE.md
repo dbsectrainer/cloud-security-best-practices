@@ -3,7 +3,7 @@ title: Security Training Guide
 layout: default
 ---
 
-# Comprehensive Cloud Security Training Guide (2024-2025 Updated)
+# Comprehensive Cloud Security Training Guide (2025-2026 Updated)
 
 ## 1. Training Program Objectives
 
@@ -13,7 +13,7 @@ layout: default
 - Reduce Human-Driven Security Risks including AI-related threats
 - Build Quantum-Ready Security Expertise
 
-## 2. Training Framework (Enhanced for 2024-2025)
+## 2. Training Framework (Enhanced for 2025-2026)
 
 ```hcl
 module "security_training_program" {
@@ -50,7 +50,7 @@ module "security_training_program" {
       frequency = "annually"
       focus_areas = [
         "strategic_risk_management_ai_era",
-        "compliance_governance_2024_2025",
+        "compliance_governance_2025_2026",
         "security_investment_strategies"
       ]
     }
@@ -64,7 +64,7 @@ module "security_training_program" {
 }
 ```
 
-## 3. Training Curriculum Modules (2024-2025 Enhanced)
+## 3. Training Curriculum Modules (2025-2026 Enhanced)
 
 ### Foundational Security Awareness (AI-Era Updated)
 
@@ -99,7 +99,7 @@ module "security_training_program" {
 - **Capture The Flag**: AI security challenges, cloud-native CTFs
 - **Expert Sessions**: Industry leaders, AI security researchers, compliance experts
 
-## 5. Skill Level Progression (2024-2025 Competency Model)
+## 5. Skill Level Progression (2025-2026 Competency Model)
 
 ### Beginner Level (Security Foundations)
 

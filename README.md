@@ -1,4 +1,7 @@
-# Cloud Security Documentation Project
+---
+title: Cloud Security Documentation Project
+layout: default
+---
 
 [![Documentation Status](https://img.shields.io/badge/docs-current-brightgreen.svg)](IMPLEMENTATION_GUIDE.md)
 [![Cloud Platforms](https://img.shields.io/badge/clouds-AWS%20%7C%20Azure%20%7C%20GCP-blue.svg)](ARCHITECTURE_AND_DIAGRAMS.md)
@@ -38,6 +41,7 @@
 
 ## 🎯 Quick Start
 
+<!-- prettier-ignore -->
 ```mermaid
 graph LR
     A[Start Here] --> B[Implementation Guide]
