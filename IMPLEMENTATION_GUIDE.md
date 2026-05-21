@@ -25,7 +25,7 @@ layout: default
 
 ## Key Technologies and Tools
 
-### Cloud Management (2024-2025 Current)
+### Cloud Management (2025-2026 Current)
 
 - **AWS**: Organizations, Control Tower, Service Catalog with enhanced security features
 - **Azure**: Active Directory, Azure Lighthouse, Policy as Code
@@ -145,7 +145,7 @@ module "cloud_security" {
 - [ ] Implement security information and event management (SIEM)
 - [ ] Configure log retention policies
 
-## Recommended Tools and Integrations (2024-2025 Current)
+## Recommended Tools and Integrations (2025-2026 Current)
 
 ### 1. Security Scanning (Next Generation)
 

@@ -18,7 +18,7 @@ Develop a robust, adaptable compliance framework that:
 
 ## Regulatory Frameworks Covered
 
-## Regulatory Frameworks Covered (Updated 2024-2025)
+## Regulatory Frameworks Covered (Updated 2025-2026)
 
 ### 1. Data Protection Regulations (Current Status)
 
@@ -34,7 +34,7 @@ Develop a robust, adaptable compliance framework that:
 - **GLBA**: Modernized safeguards rule with cloud-specific considerations
 - **EU AI Act**: Comprehensive AI regulation affecting financial services
 
-### 3. Industry-Specific Standards (2024-2025 Updates)
+### 3. Industry-Specific Standards (2025-2026 Updates)
 
 - **NIST Cybersecurity Framework 2.0**: Updated with enhanced governance function
 - **NIST AI Risk Management Framework (AI RMF 1.0)**: New AI governance standards

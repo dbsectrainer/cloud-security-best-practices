@@ -3,7 +3,7 @@ title: Vendor Security Assessment
 layout: default
 ---
 
-# Comprehensive Vendor Security Assessment Framework (2024-2025 Updated)
+# Comprehensive Vendor Security Assessment Framework (2025-2026 Updated)
 
 ## 1. Purpose and Scope
 
@@ -13,7 +13,7 @@ layout: default
 - Maintain Security Integrity across supply chain
 - Assess AI/ML model security and governance
 
-## 2. Vendor Security Assessment Methodology (Enhanced for 2024-2025)
+## 2. Vendor Security Assessment Methodology (Enhanced for 2025-2026)
 
 ```hcl
 module "vendor_security_assessment" {
@@ -33,7 +33,7 @@ module "vendor_security_assessment" {
       ]
     }
 
-    compliance_2024_2025 = {
+    compliance_2025_2026 = {
       weight = 0.25
       frameworks = [
         "GDPR_with_AI_provisions",
@@ -102,7 +102,7 @@ module "vendor_security_assessment" {
 }
 ```
 
-## 3. Assessment Domains (2024-2025 Enhanced)
+## 3. Assessment Domains (2025-2026 Enhanced)
 
 ### Security Controls Evaluation
 
