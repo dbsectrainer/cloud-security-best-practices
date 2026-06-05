@@ -1,785 +1,496 @@
 ---
-layout: null
+layout: default
+hero: true
+title: Cloud Security Best Practices | Enterprise Security Framework 2025-2026
+description: Comprehensive cloud security strategies, frameworks, and implementation guides for senior engineers, managers, and executives. Multi-cloud security across AWS, Azure, and GCP.
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Cloud Security Best Practices | Enterprise Security Framework 2025-2026
-    </title>
-    <meta
-      name="description"
-      content="Comprehensive cloud security strategies, frameworks, and implementation guides for senior engineers, managers, and executives. Multi-cloud security across AWS, Azure, and GCP."
-    />
-    <link
-      rel="stylesheet"
-      href="{{ '/assets/css/style.css' | relative_url }}"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navigation">
-      <div class="nav-container">
-        <a
-          class="nav-brand"
-          href="{{ '/' | relative_url }}"
-          aria-current="page"
-        >
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="32" height="32" rx="6" fill="#159957" />
-            <path
-              d="M16 8L22 12V20L16 24L10 20V12L16 8Z"
-              stroke="white"
-              stroke-width="2"
-              fill="none"
-            />
-            <circle cx="16" cy="16" r="3" fill="white" />
-          </svg>
-          <span class="nav-title">Cloud Security Framework</span>
-        </a>
-        <ul class="nav-menu">
-          <li>
-            <a href="{{ '/' | relative_url }}" class="active">Overview</a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Framework</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="{{ '/SECURITY_FRAMEWORK.html' | relative_url }}"
-                  >Security Framework</a
-                >
-              </li>
-              <li>
-                <a href="{{ '/RISK_MANAGEMENT.html' | relative_url }}"
-                  >Risk Management</a
-                >
-              </li>
-              <li>
-                <a href="{{ '/COMPLIANCE.html' | relative_url }}">Compliance</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Implementation</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="{{ '/IMPLEMENTATION_GUIDE.html' | relative_url }}"
-                  >Implementation Guide</a
-                >
-              </li>
-              <li>
-                <a href="{{ '/ARCHITECTURE_AND_DIAGRAMS.html' | relative_url }}"
-                  >Architecture</a
-                >
-              </li>
-              <li>
-                <a href="{{ '/TESTING_GUIDE.html' | relative_url }}">Testing</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Operations</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="{{ '/INCIDENT_RESPONSE_PLAN.html' | relative_url }}"
-                  >Incident Response</a
-                >
-              </li>
-              <li>
-                <a href="{{ '/DISASTER_RECOVERY.html' | relative_url }}"
-                  >Disaster Recovery</a
-                >
-              </li>
-              <li>
-                <a href="{{ '/SECURITY_TRAINING_GUIDE.html' | relative_url }}"
-                  >Training</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="{{ '/INNOVATION.html' | relative_url }}">Innovation</a>
-          </li>
-          <li>
-            <a href="{{ '/VENDOR_SECURITY_ASSESSMENT.html' | relative_url }}"
-              >Vendor Security</a
-            >
-          </li>
+<!-- Executive Summary -->
+<section class="executive-summary">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Executive Summary</h2>
+      <p class="section-subtitle">Key insights for decision-makers</p>
+    </div>
+    <div class="grid-3">
+      <div class="summary-card">
+        <div class="summary-icon">🎯</div>
+        <h3>Strategic Objective</h3>
+        <p>
+          Implement a comprehensive, multi-cloud security framework that reduces
+          risk by 85% while maintaining 99.99% availability and ensuring
+          continuous compliance with GDPR, HIPAA, PCI-DSS, and SOC 2.
+        </p>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon">💰</div>
+        <h3>Business Impact</h3>
+        <p>
+          Estimated 60% reduction in security incident costs, 80% faster
+          incident response, and 95% automation coverage. Average ROI of 340%
+          within 18 months of implementation.
+        </p>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon">⚡</div>
+        <h3>Implementation Timeline</h3>
+        <p>
+          Phased rollout over 6-12 months. Quick wins in 30 days with
+          foundational controls, full Zero Trust implementation in 6 months,
+          complete framework maturity in 12 months.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KPI Dashboard -->
+<section class="kpi-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Key Performance Indicators</h2>
+      <p class="section-subtitle">
+        Measured outcomes from framework implementation
+      </p>
+    </div>
+    <div class="grid-4">
+      <div class="kpi-card">
+        <div class="kpi-value">99.9%</div>
+        <div class="kpi-label">Compliance Score</div>
+        <div class="kpi-trend trend-up">↑ 12% YoY</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value">80%</div>
+        <div class="kpi-label">Reduced Response Time</div>
+        <div class="kpi-trend trend-up">↓ 45 minutes</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value">95%</div>
+        <div class="kpi-label">Security Automation</div>
+        <div class="kpi-trend trend-up">↑ 25% YoY</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value">99.99%</div>
+        <div class="kpi-label">Infrastructure Uptime</div>
+        <div class="kpi-trend trend-stable">→ Stable</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Framework Overview -->
+<section class="framework-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Comprehensive Security Framework</h2>
+      <p class="section-subtitle">
+        Built on industry-leading standards and best practices
+      </p>
+    </div>
+    <div class="grid-3">
+      <div class="framework-card card-security">
+        <div class="card-icon">🛡️</div>
+        <h3>Security Framework</h3>
+        <p>
+          Zero Trust architecture implementation with least-privilege access,
+          microsegmentation, and continuous verification across all cloud
+          platforms.
+        </p>
+        <ul class="framework-features">
+          <li>✓ Zero Trust Architecture (NIST 800-207)</li>
+          <li>✓ Identity & Access Management</li>
+          <li>✓ Network Segmentation</li>
+          <li>✓ Data Encryption (at rest & in transit)</li>
         </ul>
+        <a
+          href="{{ '/SECURITY_FRAMEWORK.html' | relative_url }}"
+          class="btn btn-outline"
+          >Explore Framework →</a
+        >
       </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-      <div class="hero-background"></div>
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">Enterprise Cloud Security Framework</h1>
-          <p class="hero-subtitle">
-            Comprehensive security strategies and best practices for multi-cloud
-            environments
-          </p>
-          <p class="hero-description">
-            A complete guide to implementing Zero Trust architecture, achieving
-            compliance, and securing cloud infrastructure across AWS, Azure, and
-            Google Cloud Platform.
-          </p>
-          <div class="hero-badges">
-            <span class="badge badge-primary">NIST CSF 2.0</span>
-            <span class="badge badge-primary">Zero Trust</span>
-            <span class="badge badge-primary">AI/ML Security</span>
-            <span class="badge badge-primary">Multi-Cloud</span>
-          </div>
-          <div class="hero-cta">
-            <a
-              href="{{ '/IMPLEMENTATION_GUIDE.html' | relative_url }}"
-              class="btn btn-primary btn-lg"
-              >Implementation Guide</a
-            >
-            <a
-              href="{{ '/SECURITY_FRAMEWORK.html' | relative_url }}"
-              class="btn btn-secondary btn-lg"
-              >Security Framework</a
-            >
-          </div>
-        </div>
-        <div class="hero-visual">
-          <img
-            src="{{ '/security_framework.svg' | relative_url }}"
-            alt="Security Framework Diagram"
-            class="hero-diagram"
-          />
-        </div>
+      <div class="framework-card card-compliance">
+        <div class="card-icon">✅</div>
+        <h3>Compliance & Governance</h3>
+        <p>
+          Automated compliance validation and continuous monitoring for GDPR,
+          HIPAA, PCI-DSS v4.0, SOC 2, and emerging regulations including EU AI
+          Act.
+        </p>
+        <ul class="framework-features">
+          <li>✓ GDPR & Privacy Controls</li>
+          <li>✓ HIPAA Healthcare Security</li>
+          <li>✓ PCI-DSS v4.0 Payment Security</li>
+          <li>✓ SOC 2 Trust Principles</li>
+        </ul>
+        <a
+          href="{{ '/COMPLIANCE.html' | relative_url }}"
+          class="btn btn-outline"
+          >View Compliance →</a
+        >
       </div>
-    </header>
-
-    <!-- Executive Summary -->
-    <section class="executive-summary">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Executive Summary</h2>
-          <p class="section-subtitle">Key insights for decision-makers</p>
-        </div>
-        <div class="grid-3">
-          <div class="summary-card">
-            <div class="summary-icon">🎯</div>
-            <h3>Strategic Objective</h3>
-            <p>
-              Implement a comprehensive, multi-cloud security framework that
-              reduces risk by 85% while maintaining 99.99% availability and
-              ensuring continuous compliance with GDPR, HIPAA, PCI-DSS, and SOC
-              2.
-            </p>
-          </div>
-          <div class="summary-card">
-            <div class="summary-icon">💰</div>
-            <h3>Business Impact</h3>
-            <p>
-              Estimated 60% reduction in security incident costs, 80% faster
-              incident response, and 95% automation coverage. Average ROI of
-              340% within 18 months of implementation.
-            </p>
-          </div>
-          <div class="summary-card">
-            <div class="summary-icon">⚡</div>
-            <h3>Implementation Timeline</h3>
-            <p>
-              Phased rollout over 6-12 months. Quick wins in 30 days with
-              foundational controls, full Zero Trust implementation in 6 months,
-              complete framework maturity in 12 months.
-            </p>
-          </div>
-        </div>
+      <div class="framework-card card-risk">
+        <div class="card-icon">📊</div>
+        <h3>Risk Management</h3>
+        <p>
+          Comprehensive risk assessment, threat modeling, and vulnerability
+          management with continuous monitoring and automated remediation
+          workflows.
+        </p>
+        <ul class="framework-features">
+          <li>✓ Risk Assessment & Analysis</li>
+          <li>✓ Threat Intelligence Integration</li>
+          <li>✓ Vulnerability Management</li>
+          <li>✓ Security Metrics & Reporting</li>
+        </ul>
+        <a
+          href="{{ '/RISK_MANAGEMENT.html' | relative_url }}"
+          class="btn btn-outline"
+          >Manage Risk →</a
+        >
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- KPI Dashboard -->
-    <section class="kpi-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Key Performance Indicators</h2>
-          <p class="section-subtitle">
-            Measured outcomes from framework implementation
-          </p>
-        </div>
-        <div class="grid-4">
-          <div class="kpi-card">
-            <div class="kpi-value">99.9%</div>
-            <div class="kpi-label">Compliance Score</div>
-            <div class="kpi-trend trend-up">↑ 12% YoY</div>
-          </div>
-          <div class="kpi-card">
-            <div class="kpi-value">80%</div>
-            <div class="kpi-label">Reduced Response Time</div>
-            <div class="kpi-trend trend-up">↓ 45 minutes</div>
-          </div>
-          <div class="kpi-card">
-            <div class="kpi-value">95%</div>
-            <div class="kpi-label">Security Automation</div>
-            <div class="kpi-trend trend-up">↑ 25% YoY</div>
-          </div>
-          <div class="kpi-card">
-            <div class="kpi-value">99.99%</div>
-            <div class="kpi-label">Infrastructure Uptime</div>
-            <div class="kpi-trend trend-stable">→ Stable</div>
-          </div>
-        </div>
+<!-- Implementation Pillars -->
+<section class="pillars-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Implementation Pillars</h2>
+      <p class="section-subtitle">Core components for successful deployment</p>
+    </div>
+    <div class="grid-2">
+      <div class="pillar-card">
+        <div class="pillar-number">01</div>
+        <h3>Architecture & Design</h3>
+        <p>
+          Multi-cloud architecture patterns with security-by-design principles,
+          network topology diagrams, and reference implementations for AWS,
+          Azure, and GCP.
+        </p>
+        <a
+          href="{{ '/ARCHITECTURE_AND_DIAGRAMS.html' | relative_url }}"
+          class="link-arrow"
+          >View Architecture →</a
+        >
       </div>
-    </section>
-
-    <!-- Framework Overview -->
-    <section class="framework-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Comprehensive Security Framework</h2>
-          <p class="section-subtitle">
-            Built on industry-leading standards and best practices
-          </p>
-        </div>
-        <div class="grid-3">
-          <div class="framework-card card-security">
-            <div class="card-icon">🛡️</div>
-            <h3>Security Framework</h3>
-            <p>
-              Zero Trust architecture implementation with least-privilege
-              access, microsegmentation, and continuous verification across all
-              cloud platforms.
-            </p>
-            <ul class="framework-features">
-              <li>✓ Zero Trust Architecture (NIST 800-207)</li>
-              <li>✓ Identity & Access Management</li>
-              <li>✓ Network Segmentation</li>
-              <li>✓ Data Encryption (at rest & in transit)</li>
-            </ul>
-            <a
-              href="{{ '/SECURITY_FRAMEWORK.html' | relative_url }}"
-              class="btn btn-outline"
-              >Explore Framework →</a
-            >
-          </div>
-          <div class="framework-card card-compliance">
-            <div class="card-icon">✅</div>
-            <h3>Compliance & Governance</h3>
-            <p>
-              Automated compliance validation and continuous monitoring for
-              GDPR, HIPAA, PCI-DSS v4.0, SOC 2, and emerging regulations
-              including EU AI Act.
-            </p>
-            <ul class="framework-features">
-              <li>✓ GDPR & Privacy Controls</li>
-              <li>✓ HIPAA Healthcare Security</li>
-              <li>✓ PCI-DSS v4.0 Payment Security</li>
-              <li>✓ SOC 2 Trust Principles</li>
-            </ul>
-            <a
-              href="{{ '/COMPLIANCE.html' | relative_url }}"
-              class="btn btn-outline"
-              >View Compliance →</a
-            >
-          </div>
-          <div class="framework-card card-risk">
-            <div class="card-icon">📊</div>
-            <h3>Risk Management</h3>
-            <p>
-              Comprehensive risk assessment, threat modeling, and vulnerability
-              management with continuous monitoring and automated remediation
-              workflows.
-            </p>
-            <ul class="framework-features">
-              <li>✓ Risk Assessment & Analysis</li>
-              <li>✓ Threat Intelligence Integration</li>
-              <li>✓ Vulnerability Management</li>
-              <li>✓ Security Metrics & Reporting</li>
-            </ul>
-            <a
-              href="{{ '/RISK_MANAGEMENT.html' | relative_url }}"
-              class="btn btn-outline"
-              >Manage Risk →</a
-            >
-          </div>
-        </div>
+      <div class="pillar-card">
+        <div class="pillar-number">02</div>
+        <h3>Implementation Guide</h3>
+        <p>
+          Step-by-step deployment instructions with Infrastructure as Code
+          templates (Terraform, CloudFormation), automation scripts, and
+          configuration examples.
+        </p>
+        <a
+          href="{{ '/IMPLEMENTATION_GUIDE.html' | relative_url }}"
+          class="link-arrow"
+          >Start Implementation →</a
+        >
       </div>
-    </section>
+      <div class="pillar-card">
+        <div class="pillar-number">03</div>
+        <h3>Testing & Validation</h3>
+        <p>
+          Comprehensive testing methodology including penetration testing,
+          vulnerability scanning, compliance validation, and automated security
+          testing frameworks.
+        </p>
+        <a href="{{ '/TESTING_GUIDE.html' | relative_url }}" class="link-arrow"
+          >Test Security →</a
+        >
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-number">04</div>
+        <h3>Operations & Response</h3>
+        <p>
+          Incident response playbooks, disaster recovery procedures, security
+          monitoring setup, and operational runbooks for 24/7 security
+          operations.
+        </p>
+        <a
+          href="{{ '/INCIDENT_RESPONSE_PLAN.html' | relative_url }}"
+          class="link-arrow"
+          >Review Operations →</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Implementation Pillars -->
-    <section class="pillars-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Implementation Pillars</h2>
-          <p class="section-subtitle">
-            Core components for successful deployment
-          </p>
+<!-- Innovation Highlights -->
+<section class="innovation-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">2025-2026 Innovation Highlights</h2>
+      <p class="section-subtitle">
+        Cutting-edge security technologies and emerging trends
+      </p>
+    </div>
+    <div class="grid-3">
+      <div class="innovation-card">
+        <div class="innovation-badge">NEW</div>
+        <h3>🤖 AI/ML Security</h3>
+        <p>
+          Comprehensive framework for securing generative AI systems, LLMs, and
+          machine learning pipelines including prompt injection prevention and
+          model security.
+        </p>
+      </div>
+      <div class="innovation-card">
+        <div class="innovation-badge">2026</div>
+        <h3>🔐 Quantum-Ready Cryptography</h3>
+        <p>
+          Post-quantum cryptography implementation roadmap and hybrid
+          cryptographic systems to prepare for quantum computing threats.
+        </p>
+      </div>
+      <div class="innovation-card">
+        <div class="innovation-badge">UPDATED</div>
+        <h3>☁️ Cloud-Native Security</h3>
+        <p>
+          Advanced Kubernetes security, service mesh implementation, serverless
+          security patterns, and CNAPP (Cloud-Native Application Protection
+          Platform) integration.
+        </p>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top: 2rem">
+      <a href="{{ '/INNOVATION.html' | relative_url }}" class="btn btn-primary"
+        >Explore Innovation →</a
+      >
+    </div>
+  </div>
+</section>
+
+<!-- Cloud Platforms -->
+<section class="platforms-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Multi-Cloud Security Coverage</h2>
+      <p class="section-subtitle">
+        Unified security strategy across all major cloud platforms
+      </p>
+    </div>
+    <div class="grid-3">
+      <div class="platform-card">
+        <div class="platform-logo">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <rect width="64" height="64" rx="12" fill="#FF9900" />
+            <text
+              x="32"
+              y="40"
+              font-size="20"
+              font-weight="bold"
+              text-anchor="middle"
+              fill="white"
+            >
+              AWS
+            </text>
+          </svg>
         </div>
-        <div class="grid-2">
-          <div class="pillar-card">
-            <div class="pillar-number">01</div>
-            <h3>Architecture & Design</h3>
-            <p>
-              Multi-cloud architecture patterns with security-by-design
-              principles, network topology diagrams, and reference
-              implementations for AWS, Azure, and GCP.
-            </p>
-            <a
-              href="{{ '/ARCHITECTURE_AND_DIAGRAMS.html' | relative_url }}"
-              class="link-arrow"
-              >View Architecture →</a
-            >
-          </div>
-          <div class="pillar-card">
-            <div class="pillar-number">02</div>
-            <h3>Implementation Guide</h3>
-            <p>
-              Step-by-step deployment instructions with Infrastructure as Code
-              templates (Terraform, CloudFormation), automation scripts, and
-              configuration examples.
-            </p>
-            <a
-              href="{{ '/IMPLEMENTATION_GUIDE.html' | relative_url }}"
-              class="link-arrow"
-              >Start Implementation →</a
-            >
-          </div>
-          <div class="pillar-card">
-            <div class="pillar-number">03</div>
-            <h3>Testing & Validation</h3>
-            <p>
-              Comprehensive testing methodology including penetration testing,
-              vulnerability scanning, compliance validation, and automated
-              security testing frameworks.
-            </p>
-            <a
-              href="{{ '/TESTING_GUIDE.html' | relative_url }}"
-              class="link-arrow"
-              >Test Security →</a
-            >
-          </div>
-          <div class="pillar-card">
-            <div class="pillar-number">04</div>
-            <h3>Operations & Response</h3>
-            <p>
-              Incident response playbooks, disaster recovery procedures,
-              security monitoring setup, and operational runbooks for 24/7
-              security operations.
-            </p>
-            <a
-              href="{{ '/INCIDENT_RESPONSE_PLAN.html' | relative_url }}"
-              class="link-arrow"
-              >Review Operations →</a
-            >
-          </div>
+        <h3>Amazon Web Services</h3>
+        <p>
+          Complete security implementation for AWS including IAM, Security Hub,
+          GuardDuty, and Control Tower configurations.
+        </p>
+        <div class="platform-features">
+          <span class="feature-tag">IAM</span>
+          <span class="feature-tag">Security Hub</span>
+          <span class="feature-tag">GuardDuty</span>
+          <span class="feature-tag">KMS</span>
         </div>
       </div>
-    </section>
-
-    <!-- Innovation Highlights -->
-    <section class="innovation-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">2025-2026 Innovation Highlights</h2>
-          <p class="section-subtitle">
-            Cutting-edge security technologies and emerging trends
-          </p>
-        </div>
-        <div class="grid-3">
-          <div class="innovation-card">
-            <div class="innovation-badge">NEW</div>
-            <h3>🤖 AI/ML Security</h3>
-            <p>
-              Comprehensive framework for securing generative AI systems, LLMs,
-              and machine learning pipelines including prompt injection
-              prevention and model security.
-            </p>
-          </div>
-          <div class="innovation-card">
-            <div class="innovation-badge">2026</div>
-            <h3>🔐 Quantum-Ready Cryptography</h3>
-            <p>
-              Post-quantum cryptography implementation roadmap and hybrid
-              cryptographic systems to prepare for quantum computing threats.
-            </p>
-          </div>
-          <div class="innovation-card">
-            <div class="innovation-badge">UPDATED</div>
-            <h3>☁️ Cloud-Native Security</h3>
-            <p>
-              Advanced Kubernetes security, service mesh implementation,
-              serverless security patterns, and CNAPP (Cloud-Native Application
-              Protection Platform) integration.
-            </p>
-          </div>
-        </div>
-        <div class="text-center" style="margin-top: 2rem">
-          <a
-            href="{{ '/INNOVATION.html' | relative_url }}"
-            class="btn btn-primary"
-            >Explore Innovation →</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Cloud Platforms -->
-    <section class="platforms-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Multi-Cloud Security Coverage</h2>
-          <p class="section-subtitle">
-            Unified security strategy across all major cloud platforms
-          </p>
-        </div>
-        <div class="grid-3">
-          <div class="platform-card">
-            <div class="platform-logo">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                <rect width="64" height="64" rx="12" fill="#FF9900" />
-                <text
-                  x="32"
-                  y="40"
-                  font-size="20"
-                  font-weight="bold"
-                  text-anchor="middle"
-                  fill="white"
-                >
-                  AWS
-                </text>
-              </svg>
-            </div>
-            <h3>Amazon Web Services</h3>
-            <p>
-              Complete security implementation for AWS including IAM, Security
-              Hub, GuardDuty, and Control Tower configurations.
-            </p>
-            <div class="platform-features">
-              <span class="feature-tag">IAM</span>
-              <span class="feature-tag">Security Hub</span>
-              <span class="feature-tag">GuardDuty</span>
-              <span class="feature-tag">KMS</span>
-            </div>
-          </div>
-          <div class="platform-card">
-            <div class="platform-logo">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                <rect width="64" height="64" rx="12" fill="#0078D4" />
-                <text
-                  x="32"
-                  y="40"
-                  font-size="16"
-                  font-weight="bold"
-                  text-anchor="middle"
-                  fill="white"
-                >
-                  Azure
-                </text>
-              </svg>
-            </div>
-            <h3>Microsoft Azure</h3>
-            <p>
-              Azure security best practices with Defender for Cloud, Sentinel,
-              Key Vault, and Azure AD security configurations.
-            </p>
-            <div class="platform-features">
-              <span class="feature-tag">Defender</span>
-              <span class="feature-tag">Sentinel</span>
-              <span class="feature-tag">Key Vault</span>
-              <span class="feature-tag">Azure AD</span>
-            </div>
-          </div>
-          <div class="platform-card">
-            <div class="platform-logo">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                <rect width="64" height="64" rx="12" fill="#4285F4" />
-                <text
-                  x="32"
-                  y="40"
-                  font-size="18"
-                  font-weight="bold"
-                  text-anchor="middle"
-                  fill="white"
-                >
-                  GCP
-                </text>
-              </svg>
-            </div>
-            <h3>Google Cloud Platform</h3>
-            <p>
-              GCP security implementation with Security Command Center, Cloud
-              Armor, IAM, and Chronicle SIEM integration.
-            </p>
-            <div class="platform-features">
-              <span class="feature-tag">SCC</span>
-              <span class="feature-tag">Cloud Armor</span>
-              <span class="feature-tag">IAM</span>
-              <span class="feature-tag">Chronicle</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Documentation Navigation -->
-    <section class="documentation-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Complete Documentation Library</h2>
-          <p class="section-subtitle">
-            Comprehensive guides for every aspect of cloud security
-          </p>
-        </div>
-        <div class="doc-grid">
-          <a
-            href="{{ '/SECURITY_FRAMEWORK.html' | relative_url }}"
-            class="doc-link"
-          >
-            <div class="doc-icon">🛡️</div>
-            <div class="doc-content">
-              <h4>Security Framework</h4>
-              <p>Zero Trust, IAM, encryption</p>
-            </div>
-          </a>
-          <a href="{{ '/COMPLIANCE.html' | relative_url }}" class="doc-link">
-            <div class="doc-icon">✅</div>
-            <div class="doc-content">
-              <h4>Compliance</h4>
-              <p>GDPR, HIPAA, PCI-DSS, SOC 2</p>
-            </div>
-          </a>
-          <a
-            href="{{ '/RISK_MANAGEMENT.html' | relative_url }}"
-            class="doc-link"
-          >
-            <div class="doc-icon">📊</div>
-            <div class="doc-content">
-              <h4>Risk Management</h4>
-              <p>Assessment, mitigation, monitoring</p>
-            </div>
-          </a>
-          <a
-            href="{{ '/IMPLEMENTATION_GUIDE.html' | relative_url }}"
-            class="doc-link"
-          >
-            <div class="doc-icon">🚀</div>
-            <div class="doc-content">
-              <h4>Implementation Guide</h4>
-              <p>Step-by-step deployment</p>
-            </div>
-          </a>
-          <a
-            href="{{ '/ARCHITECTURE_AND_DIAGRAMS.html' | relative_url }}"
-            class="doc-link"
-          >
-            <div class="doc-icon">🏗️</div>
-            <div class="doc-content">
-              <h4>Architecture</h4>
-              <p>Diagrams, patterns, design</p>
-            </div>
-          </a>
-          <a href="{{ '/TESTING_GUIDE.html' | relative_url }}" class="doc-link">
-            <div class="doc-icon">🧪</div>
-            <div class="doc-content">
-              <h4>Testing Guide</h4>
-              <p>Validation, penetration testing</p>
-            </div>
-          </a>
-          <a
-            href="{{ '/INCIDENT_RESPONSE_PLAN.html' | relative_url }}"
-            class="doc-link"
-          >
-            <div class="doc-icon">🚨</div>
-            <div class="doc-content">
-              <h4>Incident Response</h4>
-              <p>Playbooks, procedures, escalation</p>
-            </div>
-          </a>
-          <a
-            href="{{ '/DISASTER_RECOVERY.html' | relative_url }}"
-            class="doc-link"
-          >
-            <div class="doc-icon">🔄</div>
-            <div class="doc-content">
-              <h4>Disaster Recovery</h4>
-              <p>Business continuity, backup</p>
-            </div>
-          </a>
-          <a
-            href="{{ '/SECURITY_TRAINING_GUIDE.html' | relative_url }}"
-            class="doc-link"
-          >
-            <div class="doc-icon">📚</div>
-            <div class="doc-content">
-              <h4>Security Training</h4>
-              <p>Education, awareness, certification</p>
-            </div>
-          </a>
-          <a
-            href="{{ '/VENDOR_SECURITY_ASSESSMENT.html' | relative_url }}"
-            class="doc-link"
-          >
-            <div class="doc-icon">🔍</div>
-            <div class="doc-content">
-              <h4>Vendor Security</h4>
-              <p>Third-party assessment</p>
-            </div>
-          </a>
-          <a href="{{ '/INNOVATION.html' | relative_url }}" class="doc-link">
-            <div class="doc-icon">💡</div>
-            <div class="doc-content">
-              <h4>Innovation</h4>
-              <p>AI, quantum, emerging tech</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-content">
-          <h2>Ready to Transform Your Cloud Security?</h2>
-          <p>
-            Start your journey to enterprise-grade cloud security with our
-            comprehensive implementation guide.
-          </p>
-          <div class="cta-buttons">
-            <a
-              href="{{ '/IMPLEMENTATION_GUIDE.html' | relative_url }}"
-              class="btn btn-primary btn-lg"
-              >Get Started Now</a
+      <div class="platform-card">
+        <div class="platform-logo">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <rect width="64" height="64" rx="12" fill="#0078D4" />
+            <text
+              x="32"
+              y="40"
+              font-size="16"
+              font-weight="bold"
+              text-anchor="middle"
+              fill="white"
             >
-            <a
-              href="https://github.com/dbsectrainer/cloud-security-best-practices"
-              class="btn btn-secondary btn-lg"
-              >View on GitHub</a
+              Azure
+            </text>
+          </svg>
+        </div>
+        <h3>Microsoft Azure</h3>
+        <p>
+          Azure security best practices with Defender for Cloud, Sentinel, Key
+          Vault, and Azure AD security configurations.
+        </p>
+        <div class="platform-features">
+          <span class="feature-tag">Defender</span>
+          <span class="feature-tag">Sentinel</span>
+          <span class="feature-tag">Key Vault</span>
+          <span class="feature-tag">Azure AD</span>
+        </div>
+      </div>
+      <div class="platform-card">
+        <div class="platform-logo">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <rect width="64" height="64" rx="12" fill="#4285F4" />
+            <text
+              x="32"
+              y="40"
+              font-size="18"
+              font-weight="bold"
+              text-anchor="middle"
+              fill="white"
             >
-          </div>
+              GCP
+            </text>
+          </svg>
+        </div>
+        <h3>Google Cloud Platform</h3>
+        <p>
+          GCP security implementation with Security Command Center, Cloud Armor,
+          IAM, and Chronicle SIEM integration.
+        </p>
+        <div class="platform-features">
+          <span class="feature-tag">SCC</span>
+          <span class="feature-tag">Cloud Armor</span>
+          <span class="feature-tag">IAM</span>
+          <span class="feature-tag">Chronicle</span>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-section">
-            <h4>Framework</h4>
-            <ul>
-              <li>
-                <a href="{{ '/SECURITY_FRAMEWORK.html' | relative_url }}"
-                  >Security Framework</a
-                >
-              </li>
-              <li>
-                <a href="{{ '/COMPLIANCE.html' | relative_url }}">Compliance</a>
-              </li>
-              <li>
-                <a href="{{ '/RISK_MANAGEMENT.html' | relative_url }}"
-                  >Risk Management</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h4>Implementation</h4>
-            <ul>
-              <li>
-                <a href="{{ '/IMPLEMENTATION_GUIDE.html' | relative_url }}"
-                  >Implementation Guide</a
-                >
-              </li>
-              <li>
-                <a href="{{ '/ARCHITECTURE_AND_DIAGRAMS.html' | relative_url }}"
-                  >Architecture</a
-                >
-              </li>
-              <li>
-                <a href="{{ '/TESTING_GUIDE.html' | relative_url }}">Testing</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h4>Operations</h4>
-            <ul>
-              <li>
-                <a href="{{ '/INCIDENT_RESPONSE_PLAN.html' | relative_url }}"
-                  >Incident Response</a
-                >
-              </li>
-              <li>
-                <a href="{{ '/DISASTER_RECOVERY.html' | relative_url }}"
-                  >Disaster Recovery</a
-                >
-              </li>
-              <li>
-                <a href="{{ '/SECURITY_TRAINING_GUIDE.html' | relative_url }}"
-                  >Training</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h4>Resources</h4>
-            <ul>
-              <li>
-                <a href="{{ '/INNOVATION.html' | relative_url }}">Innovation</a>
-              </li>
-              <li>
-                <a
-                  href="{{ '/VENDOR_SECURITY_ASSESSMENT.html' | relative_url }}"
-                  >Vendor Security</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://github.com/dbsectrainer/cloud-security-best-practices"
-                  >GitHub Repository</a
-                >
-              </li>
-            </ul>
-          </div>
+<!-- Documentation Navigation -->
+<section class="documentation-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Complete Documentation Library</h2>
+      <p class="section-subtitle">
+        Comprehensive guides for every aspect of cloud security
+      </p>
+    </div>
+    <div class="doc-grid">
+      <a
+        href="{{ '/SECURITY_FRAMEWORK.html' | relative_url }}"
+        class="doc-link"
+      >
+        <div class="doc-icon">🛡️</div>
+        <div class="doc-content">
+          <h4>Security Framework</h4>
+          <p>Zero Trust, IAM, encryption</p>
         </div>
-        <div class="footer-bottom">
-          <p>
-            &copy; 2026 Cloud Security Documentation Project | Last Updated: May
-            2026
-          </p>
-          <p>Built with enterprise security standards | NIST CSF 2.0 Aligned</p>
+      </a>
+      <a href="{{ '/COMPLIANCE.html' | relative_url }}" class="doc-link">
+        <div class="doc-icon">✅</div>
+        <div class="doc-content">
+          <h4>Compliance</h4>
+          <p>GDPR, HIPAA, PCI-DSS, SOC 2</p>
         </div>
+      </a>
+      <a href="{{ '/RISK_MANAGEMENT.html' | relative_url }}" class="doc-link">
+        <div class="doc-icon">📊</div>
+        <div class="doc-content">
+          <h4>Risk Management</h4>
+          <p>Assessment, mitigation, monitoring</p>
+        </div>
+      </a>
+      <a
+        href="{{ '/IMPLEMENTATION_GUIDE.html' | relative_url }}"
+        class="doc-link"
+      >
+        <div class="doc-icon">🚀</div>
+        <div class="doc-content">
+          <h4>Implementation Guide</h4>
+          <p>Step-by-step deployment</p>
+        </div>
+      </a>
+      <a
+        href="{{ '/ARCHITECTURE_AND_DIAGRAMS.html' | relative_url }}"
+        class="doc-link"
+      >
+        <div class="doc-icon">🏗️</div>
+        <div class="doc-content">
+          <h4>Architecture</h4>
+          <p>Diagrams, patterns, design</p>
+        </div>
+      </a>
+      <a href="{{ '/TESTING_GUIDE.html' | relative_url }}" class="doc-link">
+        <div class="doc-icon">🧪</div>
+        <div class="doc-content">
+          <h4>Testing Guide</h4>
+          <p>Validation, penetration testing</p>
+        </div>
+      </a>
+      <a
+        href="{{ '/INCIDENT_RESPONSE_PLAN.html' | relative_url }}"
+        class="doc-link"
+      >
+        <div class="doc-icon">🚨</div>
+        <div class="doc-content">
+          <h4>Incident Response</h4>
+          <p>Playbooks, procedures, escalation</p>
+        </div>
+      </a>
+      <a href="{{ '/DISASTER_RECOVERY.html' | relative_url }}" class="doc-link">
+        <div class="doc-icon">🔄</div>
+        <div class="doc-content">
+          <h4>Disaster Recovery</h4>
+          <p>Business continuity, backup</p>
+        </div>
+      </a>
+      <a
+        href="{{ '/SECURITY_TRAINING_GUIDE.html' | relative_url }}"
+        class="doc-link"
+      >
+        <div class="doc-icon">📚</div>
+        <div class="doc-content">
+          <h4>Security Training</h4>
+          <p>Education, awareness, certification</p>
+        </div>
+      </a>
+      <a
+        href="{{ '/VENDOR_SECURITY_ASSESSMENT.html' | relative_url }}"
+        class="doc-link"
+      >
+        <div class="doc-icon">🔍</div>
+        <div class="doc-content">
+          <h4>Vendor Security</h4>
+          <p>Third-party assessment</p>
+        </div>
+      </a>
+      <a href="{{ '/INNOVATION.html' | relative_url }}" class="doc-link">
+        <div class="doc-icon">💡</div>
+        <div class="doc-content">
+          <h4>Innovation</h4>
+          <p>AI, quantum, emerging tech</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Transform Your Cloud Security?</h2>
+      <p>
+        Start your journey to enterprise-grade cloud security with our
+        comprehensive implementation guide.
+      </p>
+      <div class="cta-buttons">
+        <a
+          href="{{ '/IMPLEMENTATION_GUIDE.html' | relative_url }}"
+          class="btn btn-primary btn-lg"
+          >Get Started Now</a
+        >
+        <a
+          href="https://github.com/dbsectrainer/cloud-security-best-practices"
+          class="btn btn-secondary btn-lg"
+          >View on GitHub</a
+        >
       </div>
-    </footer>
-
-    <script>
-      // Simple dropdown functionality
-      document.querySelectorAll(".dropdown-toggle").forEach((toggle) => {
-        toggle.addEventListener("click", function (e) {
-          e.preventDefault();
-          const parent = this.parentElement;
-          parent.classList.toggle("active");
-        });
-      });
-
-      // Close dropdowns when clicking outside
-      document.addEventListener("click", function (e) {
-        if (!e.target.closest(".dropdown")) {
-          document.querySelectorAll(".dropdown.active").forEach((dropdown) => {
-            dropdown.classList.remove("active");
-          });
-        }
-      });
-    </script>
-  </body>
-</html>
+    </div>
+  </div>
+</section>
