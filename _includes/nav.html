@@ -4,14 +4,7 @@
     <a
       class="nav-brand"
       href="{{ '/' | relative_url }}"
-      {%
-      if
-      page.path=""
-      ="index.html"
-      %}aria-current="page"
-      {%
-      endif
-      %}
+      {% if page.path == "index.html" %}aria-current="page"{% endif %}
     >
       <svg
         width="32"
@@ -35,14 +28,7 @@
       <li>
         <a
           href="{{ '/' | relative_url }}"
-          {%
-          if
-          page.path=""
-          ="index.html"
-          %}class="active"
-          {%
-          endif
-          %}
+          {% if page.path == "index.html" %}class="active"{% endif %}
           >Overview</a
         >
       </li>
