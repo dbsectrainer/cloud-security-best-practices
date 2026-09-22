@@ -48,14 +48,12 @@ This repository is a Jekyll-based documentation site for cloud security best pra
 ## Conventions
 
 - All documentation is markdown-first, auto-published via Jekyll
-- Diagrams are versioned as both DOT and SVG
-- No code (other than site config/layout) is present; focus is on documentation quality and clarity
+- Diagrams are versioned as both DOT and SVG; regenerate SVG files with Graphviz when editing DOT sources
+- Maintain factual vendor currency: Microsoft Entra ID (not Azure AD), Prisma Cloud Compute (not Twistlock), Google Security Operations / Google SecOps (not Chronicle), Lacework FortiCNAPP, OpenTofu and IBM HashiCorp
+- Maintain regulatory currency: PCI-DSS v4.0.1 (in full force), NIST FIPS 203/204/205 post-quantum cryptography standards, OWASP Top 10:2025, and EU AI Act phased compliance milestones
+- Ensure multi-document consistency across `README.md`, `SECURITY_FRAMEWORK.md`, `COMPLIANCE.md`, and `IMPLEMENTATION_GUIDE.md` when updating framework lists
 
 ## Examples
 
-- To update a diagram, edit the `.dot` file and regenerate the `.svg` using the provided command
-- To add a new guide, create a markdown file and link it in `README.md` and/or relevant sections
-
----
-
-Please review and let me know if any sections need clarification or if there are additional project-specific patterns to document.
+- To update a diagram, edit the `.dot` file and regenerate the `.svg` using `dot -Tsvg <name>.dot -o <name>.svg`
+- To add a new guide, create a markdown file and link it in `README.md`, `_config.yml` (include list), and relevant navigation structures

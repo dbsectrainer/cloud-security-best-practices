@@ -27,7 +27,7 @@ module "vendor_security_assessment" {
         "access_management",
         "zero_trust_implementation",
         "ai_ml_security",
-        "encryption_quantum_ready",
+        "encryption_pqc_fips_ready",
         "incident_response",
         "supply_chain_security"
       ]
@@ -40,7 +40,7 @@ module "vendor_security_assessment" {
         "HIPAA_cloud_AI_updated",
         "SOC_2_with_AI_governance",
         "ISO_27001_2022",
-        "PCI_DSS_v4_0",
+        "PCI_DSS_v4_0_1",
         "EU_AI_Act",
         "NIST_AI_RMF_1_0"
       ]
@@ -85,7 +85,7 @@ module "vendor_security_assessment" {
         "zero_trust_implementation",
         "innovation_potential",
         "scalability",
-        "quantum_ready_cryptography"
+        "pqc_fips_cryptography"
       ]
     }
   }
@@ -106,7 +106,7 @@ module "vendor_security_assessment" {
 
 ### Security Controls Evaluation
 
-- **Data Protection**: Encryption at rest/transit, data residency, quantum-ready cryptography
+- **Data Protection**: Encryption at rest/transit, data residency, post-quantum cryptography migration (NIST FIPS 203/204/205)
 - **Access Management**: Zero Trust implementation, MFA, privileged access management
 - **AI/ML Security**: Model protection, adversarial attack resistance, data poisoning prevention
 - **Incident Response**: 24/7 SOC, automated response, threat intelligence integration
@@ -114,8 +114,8 @@ module "vendor_security_assessment" {
 
 ### Compliance Verification (Current Standards)
 
-- **Regulatory Compliance**: GDPR with AI provisions, PCI-DSS v4.0, HIPAA updates
-- **AI Governance**: EU AI Act compliance, NIST AI RMF implementation
+- **Regulatory Compliance**: GDPR with AI provisions, PCI-DSS v4.0.1, HIPAA updates
+- **AI Governance**: EU AI Act compliance (prohibited practices, GPAI models, transparency, and high-risk system timelines), NIST AI RMF implementation
 - **Industry Standards**: ISO 27001:2022, SOC 2 with AI considerations
 - **Audit Trail**: Immutable logging, real-time monitoring, compliance reporting
 

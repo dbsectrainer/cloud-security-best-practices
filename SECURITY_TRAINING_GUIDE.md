@@ -11,7 +11,7 @@ layout: default
 - Develop Technical Competencies for cloud-native and AI systems
 - Foster Security-First Culture with Zero Trust mindset
 - Reduce Human-Driven Security Risks including AI-related threats
-- Build Quantum-Ready Security Expertise
+- Build Post-Quantum Cryptography (FIPS 203/204/205) Expertise
 
 ## 2. Training Framework (Enhanced for 2025-2026)
 
@@ -41,7 +41,7 @@ module "security_training_program" {
         "zero_trust_architecture",
         "devsecops_advanced",
         "incident_response_automation",
-        "quantum_cryptography_transition"
+        "post_quantum_cryptography_fips_transition"
       ]
     }
 
@@ -79,12 +79,12 @@ module "security_training_program" {
 - **Cloud Shared Responsibility**: Updated for AI/ML services and containers
 - **Identity and Access Management**: Zero Trust, FIDO2, passwordless authentication
 - **Network Security**: SASE/SSE, micro-segmentation, service mesh security
-- **Encryption**: Quantum-ready cryptography, homomorphic encryption
-- **Compliance**: GDPR AI provisions, PCI-DSS v4.0, EU AI Act
+- **Encryption**: Post-quantum cryptography migration (NIST FIPS 203/204/205), homomorphic encryption
+- **Compliance**: GDPR AI provisions, PCI-DSS v4.0.1, EU AI Act (enacted prohibited AI/GPAI/transparency requirements and high-risk timelines)
 
 ### Technical Security Skills (Modern Stack)
 
-- **Secure Coding**: OWASP Top 10 2024, AI-specific vulnerabilities
+- **Secure Coding**: OWASP Top 10:2025, OWASP Top 10 for LLM & Generative AI Applications
 - **DevSecOps**: Policy-as-code, SLSA framework, SBOM generation
 - **Cloud Configuration**: CNAPP, CSPM, container security best practices
 - **AI/ML Security**: Model validation, adversarial testing, AI red teaming
@@ -173,7 +173,7 @@ module "security_training_program" {
 
 - AI and Machine Learning Security
 - IoT Security Challenges
-- Quantum Computing Threats
+- Post-Quantum Cryptography Migration (FIPS 203/204/205) and Quantum Computing Threats
 - Blockchain Security
 
 ## Conclusion

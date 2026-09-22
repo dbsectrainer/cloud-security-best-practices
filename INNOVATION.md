@@ -42,14 +42,15 @@ module "generative_ai_security" {
 }
 ```
 
-### 2. Quantum-Resistant Security Transition
+### 2. Post-Quantum Cryptography (PQC) Migration
 
 #### Current Imperatives (2025-2026)
 
-- Post-quantum cryptography implementation planning
-- Hybrid classical-quantum security models
-- Quantum key distribution (QKD) integration
-- Cryptographic agility frameworks
+- Active migration to finalized NIST standards: FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205 (SLH-DSA)
+- Implementation of hybrid classical/post-quantum cryptographic models
+- Cryptographic inventory and discovery across cloud infrastructure and data stores
+- Transition planning to meet commercial and federal compliance deadlines
+- Cryptographic agility frameworks for rapid algorithm replacement
 
 ### 3. Cloud-Native Security Mesh
 
@@ -137,11 +138,12 @@ module "advanced_security_policy" {
 
 ## Technological Breakthroughs
 
-### Quantum-Resistant Encryption
+### Post-Quantum Cryptography (NIST FIPS 203, 204, 205)
 
-- Post-quantum cryptography research
-- Preparing for quantum computing threats
-- Developing quantum-safe encryption protocols
+- Migration to finalized FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205 (SLH-DSA) standards
+- Defense against "harvest now, decrypt later" (HNDL) attacks
+- Hybrid key exchange and digital signature adoption in TLS and data-at-rest encryption
+- Cryptographic agility integration in cloud security SDKs and services
 
 ### Blockchain for Security Integrity
 

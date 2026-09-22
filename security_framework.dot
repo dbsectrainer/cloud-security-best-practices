@@ -10,19 +10,19 @@ digraph SecurityFramework {
     Controls [label="Security Controls\n(Policy-as-Code)"];
     ThreatMgmt [label="AI-Enhanced Threat\nManagement"];
     Tech [label="Advanced Technologies\n(LLM Security)"];
-    Compliance [label="Compliance & Governance\n(AI Act + PCI-DSS 4.0)"];
+    Compliance [label="Compliance & Governance\n(AI Act + PCI-DSS 4.0.1)"];
     Metrics [label="Security Metrics\n(AI-Driven Analytics)"];
-    
+
     // Enhanced Subcomponents for 2025-2026
     node [shape=box, style="rounded,filled", fillcolor=lightgrey];
     IAM [label="Identity & Access\nManagement\n(Passwordless)"];
     Network [label="Network Security\n(SASE/SSE)"];
-    Data [label="Data Protection\n(Quantum-Ready)"];
+    Data [label="Data Protection\n(FIPS PQC Migration)"];
     ML [label="Machine Learning\n(Adversarial Protection)"];
     AI [label="AI Security Framework\n(LLM Governance)"];
     SOC [label="Security Operations\n(AI-Powered SOC)"];
     Supply [label="Supply Chain\n(SBOM/SLSA)"];
-    
+
     // Relationships
     Strategy -> {Principles, Architecture, Controls} [dir=forward];
     Principles -> {IAM, Network, Data, Supply} [dir=forward];
@@ -31,7 +31,7 @@ digraph SecurityFramework {
     ThreatMgmt -> {SOC, ML, AI} [dir=forward];
     {ML, AI} -> Metrics [dir=forward];
     {IAM, Network, Data, Supply} -> Compliance [dir=forward];
-    
+
     // Enhanced Metrics Subgraph
     subgraph cluster_metrics {
         style=dashed;

@@ -143,7 +143,7 @@ module "security_testing_framework" {
 - **Enterprise**: Nessus Professional, Qualys, Rapid7 InsightVM
 - **Open Source**: OpenVAS, Nuclei, ZAP with AI-powered scanning
 - **Cloud Native**: Tenable.io, Aqua Trivy, Grype
-- **Container/K8s**: Twistlock/Prisma Cloud, Aqua Security, Sysdig Secure
+- **Container/K8s**: Prisma Cloud Compute, Aqua Security, Sysdig Secure
 
 ### Penetration Testing (Modern Toolkit)
 
@@ -154,10 +154,10 @@ module "security_testing_framework" {
 
 ### Compliance Validation (Policy-as-Code)
 
-- **Multi-cloud CSPM**: Prisma Cloud, Lacework, Wiz, Orca Security
+- **Multi-cloud CSPM**: Prisma Cloud, Lacework FortiCNAPP, Wiz, Orca Security
 - **Open Source**: Cloud Custodian, Prowler, Scout Suite
 - **Kubernetes**: Polaris, Falco, OPA Gatekeeper, Kube-bench
-- **Infrastructure**: Chef InSpec, AWS Config Rules, Bridgecrew
+- **Infrastructure**: Chef InSpec, AWS Config Rules, Prisma Cloud (code-to-cloud)
 
 ### AI/ML Security Testing (Emerging 2025-2026)
 

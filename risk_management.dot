@@ -17,7 +17,7 @@ digraph RiskManagement {
         node [style=filled, fillcolor=lightgrey];
         Technical [label="Technical Risks\n(AI/ML Security)"];
         Operational [label="Operational Risks\n(Human + AI)"];
-        Strategic [label="Strategic Risks\n(Quantum + Geopolitical)"];
+        Strategic [label="Strategic Risks\n(PQC Migration + Geopolitical)"];
         Compliance [label="Compliance Risks\n(AI Act + Privacy)"];
         Supply [label="Supply Chain\n(AI Models + Code)"];
     }
