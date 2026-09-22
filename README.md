@@ -11,9 +11,9 @@
 1. Provides a structured documentation hub covering the full cloud security lifecycle across AWS, Azure, and Google Cloud Platform.
 2. Implements a Zero Trust architecture reference aligned to NIST SP 800-207 and NIST Cybersecurity Framework 2.0 with policy-as-code enforcement.
 3. Delivers a day-by-day 30-day FedRAMP Moderate implementation roadmap mapping 325+ NIST 800-53 controls to concrete AWS service configurations.
-4. Covers AI and ML security including LLM guardrails, prompt injection protection, model governance, and EU AI Act alignment.
+4. Covers AI and ML security including LLM guardrails, prompt injection protection, model governance, and EU AI Act alignment across its phased enforcement roadmap.
 5. Addresses supply chain security with SBOM generation, software composition analysis, and SAST/DAST integration patterns.
-6. Supports compliance automation across GDPR, PCI-DSS v4.0, HIPAA, SOC 2, FedRAMP, and the EU AI Act through static analysis and continuous monitoring tooling.
+6. Supports compliance automation across GDPR, PCI-DSS v4.0.1, HIPAA, SOC 2, FedRAMP, and the EU AI Act through static analysis and continuous monitoring tooling.
 
 ---
 
@@ -69,7 +69,7 @@ Reference implementation of a Zero Trust architecture grounded in NIST SP 800-20
 - Identity-centric access with least-privilege enforcement across all cloud planes
 - Micro-segmentation patterns for AWS VPC, Azure Virtual Network, and GCP VPC
 - Continuous verification with session-level re-authentication policies
-- Policy-as-code enforcement using HashiCorp Sentinel and Open Policy Agent (OPA)
+- Policy-as-code enforcement using IBM HashiCorp Sentinel and Open Policy Agent (OPA)
 - Network perimeter elimination patterns with east-west traffic inspection
 - NIST CSF 2.0 Govern, Identify, Protect, Detect, Respond, and Recover function mapping
 
@@ -80,23 +80,24 @@ Unified security hardening patterns covering all three major cloud platforms wit
 | Platform | Identity | Network | Detection |
 | --- | --- | --- | --- |
 | AWS | IAM, Control Tower, Organizations | VPC, WAF, Shield | Security Hub, GuardDuty, Macie |
-| Azure | Azure AD, Privileged Identity Mgmt | Azure Firewall, DDoS | Defender for Cloud, Sentinel |
-| GCP | IAM, Organization Policy | Cloud Armor, VPC-SC | Security Command Center, Chronicle |
+| Azure | Microsoft Entra ID (formerly Azure AD), Privileged Identity Mgmt | Azure Firewall, DDoS | Defender for Cloud, Sentinel |
+| GCP | IAM, Organization Policy | Cloud Armor, VPC-SC | Security Command Center, Google Security Operations (Google SecOps) |
 
-- Cloud-native application protection platform (CNAPP) integration with Prisma Cloud, Wiz, and Lacework
-- Infrastructure as Code security scanning with Checkov and Bridgecrew
-- Container security patterns for Kubernetes using Twistlock and Aqua Security
+- Cloud-native application protection platform (CNAPP) integration with Prisma Cloud, Wiz, and Lacework FortiCNAPP
+- Infrastructure as Code provisioning with Terraform / OpenTofu and policy validation
+- Infrastructure as Code security scanning with Checkov and Prisma Cloud (code-to-cloud)
+- Container security patterns for Kubernetes using Prisma Cloud Compute and Aqua Security
 - Serverless security considerations for AWS Lambda, Azure Functions, and Cloud Run
 
 ### AI and ML Security (LLM Protection + Model Governance)
 
-Comprehensive guidance for securing AI workloads aligned to the EU AI Act and EO 14110.
+Comprehensive guidance for securing AI workloads aligned to the EU AI Act (enacted prohibited AI, GPAI, and transparency rules with 2027/2028 high-risk timelines) and EO 14110.
 
 - Prompt injection detection and mitigation patterns for LLM-backed applications
 - Model input/output guardrails with audit logging for compliance evidence
 - AI model supply chain controls including provenance tracking and integrity verification
 - Bias detection integration and responsible AI governance checklists
-- EU AI Act risk classification and technical documentation requirements
+- EU AI Act risk classification, technical documentation, and phased compliance milestones (Feb 2025 prohibited practices, Aug 2025 GPAI, Aug 2026 transparency, Dec 2027 / Aug 2028 high-risk systems)
 - Alignment with OMB M-24-10 federal AI governance guidance
 
 ### Compliance Frameworks
@@ -108,10 +109,10 @@ Documentation and automation guidance mapped to the most common regulatory and c
 | NIST CSF 2.0 | General cybersecurity posture | Control mapping in SECURITY_FRAMEWORK.md |
 | FedRAMP Moderate | Federal cloud authorization | 30-day roadmap + 325-control checklist |
 | GDPR | EU data protection | Data residency and privacy control patterns |
-| PCI-DSS v4.0 | Payment card environments | Network segmentation and encryption guidance |
+| PCI-DSS v4.0.1 | Payment card environments | Network segmentation and encryption guidance |
 | HIPAA | Healthcare data | Covered entity and BA control requirements |
 | SOC 2 | Trust services criteria | Availability, confidentiality, and security |
-| EU AI Act | AI system risk management | Risk classification and documentation |
+| EU AI Act | AI system risk management | Phased compliance roadmap (2025–2028), risk classification, and technical documentation |
 
 ### FedRAMP 30-Day Implementation Guide (fedramp-30-days/)
 
@@ -131,10 +132,10 @@ A reproducible, day-by-day path from a standard AWS environment to a FedRAMP Mod
 - NIST Cybersecurity Framework 2.0
 - FedRAMP Moderate authorization requirements
 - GDPR (General Data Protection Regulation)
-- PCI-DSS v4.0 (Payment Card Industry Data Security Standard)
+- PCI-DSS v4.0.1 (Payment Card Industry Data Security Standard)
 - HIPAA (Health Insurance Portability and Accountability Act)
 - SOC 2 (Service Organization Control 2)
-- EU AI Act risk classification requirements
+- EU AI Act phased compliance requirements (prohibited AI, GPAI models, transparency, high-risk systems)
 - EO 14110 and OMB M-24-10 federal AI governance
 
 ---
@@ -174,6 +175,7 @@ Recommended reading order for new users:
 3. `COMPLIANCE.md` — regulatory framework mappings
 4. `ARCHITECTURE_AND_DIAGRAMS.md` — system diagrams and network security layouts
 5. `fedramp-30-days/README.md` — begin the day-by-day FedRAMP roadmap
+6. `TECH_STACK_UPDATE_PLAN.md` — vendor renames, standards currency, and remediation history
 
 ### FedRAMP 30-Day Guide
 
@@ -203,7 +205,7 @@ open fedramp-30-days/aws-services-reference.md
 - Multi-cloud hardening guidance for AWS, Azure, and GCP completed
 - AI/ML security framework covering LLM guardrails and EU AI Act alignment included
 - Supply chain security guidance (SBOM, SCA, SAST/DAST) documented
-- Compliance framework documentation covers GDPR, PCI-DSS v4.0, HIPAA, SOC 2, FedRAMP, and EU AI Act
+- Compliance framework documentation covers GDPR, PCI-DSS v4.0.1, HIPAA, SOC 2, FedRAMP, and the EU AI Act (phased enforcement roadmap)
 - Jekyll site with navigation, layouts, and CSS assets ready for GitHub Pages deployment
 - Graphviz-sourced diagrams (`.dot` + `.svg`) for security framework, risk management, incident response, and disaster recovery
 
@@ -219,6 +221,7 @@ ls *.md fedramp-30-days/*.md
 # Expected output includes:
 # IMPLEMENTATION_GUIDE.md  SECURITY_FRAMEWORK.md  COMPLIANCE.md
 # ARCHITECTURE_AND_DIAGRAMS.md  TESTING_GUIDE.md  INNOVATION.md
+# TECH_STACK_UPDATE_PLAN.md
 # RISK_MANAGEMENT.md  INCIDENT_RESPONSE_PLAN.md  DISASTER_RECOVERY.md
 # fedramp-30-days/README.md  fedramp-30-days/control-checklist.md
 # fedramp-30-days/aws-services-reference.md
@@ -248,6 +251,7 @@ cloud-security-best-practices/
 ├── DISASTER_RECOVERY.md         # DR architecture and RTO/RPO targets
 ├── VENDOR_SECURITY_ASSESSMENT.md
 ├── SECURITY_TRAINING_GUIDE.md
+├── TECH_STACK_UPDATE_PLAN.md    # Vendor/standards currency review and remediation log
 ├── Gemfile                      # Jekyll dependencies
 ├── Gemfile.lock
 ├── _config.yml                  # Jekyll site configuration

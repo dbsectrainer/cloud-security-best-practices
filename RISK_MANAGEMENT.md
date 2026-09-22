@@ -8,7 +8,7 @@ layout: default
 ## 1. Risk Management Objectives (AI-Era Updated)
 
 - Identify Potential Threats including AI/ML-specific risks
-- Assess Vulnerability Landscape with quantum computing considerations
+- Assess Vulnerability Landscape with post-quantum cryptography migration considerations (FIPS 203/204/205)
 - Develop Mitigation Strategies for emerging threat vectors
 - Continuous Risk Monitoring with AI-powered analytics
 - Proactive Risk Reduction through predictive intelligence
@@ -166,16 +166,17 @@ module "risk_management_framework" {
 - **Cloud-Native Attacks**: Container escapes, Kubernetes compromises
 - **AI-Powered Attacks**: Automated vulnerability discovery, deepfake social engineering
 
-### Quantum Computing Threats (Emerging)
+### Quantum Computing Threats & PQC Migration (Current Landscape)
 
-- **Cryptographic Disruption**: RSA/ECC vulnerability, harvest-now-decrypt-later
-- **Quantum-Safe Transition**: Algorithm migration, hybrid security models
-- **Timeline Planning**: NIST post-quantum standards, implementation roadmaps
+- **Cryptographic Disruption**: RSA/ECC vulnerability to Shor's algorithm, harvest-now-decrypt-later (HNDL) threats
+- **FIPS-Standardized PQC Transition**: Active migration to finalized NIST standards—FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205 (SLH-DSA)
+- **Hybrid Cryptographic Deployments**: Combining classical and quantum-safe algorithms during transition windows
+- **Migration Roadmap**: Cryptographic inventory, algorithm agility, and alignment with federal/industry PQC mandates
 
 ### Geopolitical and Regulatory Risks (2025-2026)
 
 - **Data Sovereignty**: Cross-border data restrictions, local data residency
-- **Regulatory Fragmentation**: GDPR, AI Act, state privacy laws, sector-specific regulations
+- **Regulatory Fragmentation**: GDPR, EU AI Act (phased requirements across prohibited AI, GPAI, transparency, and high-risk classifications), state privacy laws, sector-specific regulations
 - **Technology Export Controls**: AI/ML technology restrictions, dual-use concerns
 - **Supply Chain Geopolitics**: Vendor concentration, critical dependency mapping
 

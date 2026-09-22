@@ -28,13 +28,13 @@ layout: default
 ### Cloud Management (2025-2026 Current)
 
 - **AWS**: Organizations, Control Tower, Service Catalog with enhanced security features
-- **Azure**: Active Directory, Azure Lighthouse, Policy as Code
+- **Azure**: Microsoft Entra ID (formerly Azure Active Directory), Azure Lighthouse, Policy as Code
 - **Google Cloud**: Identity and Access Management, Organization Policy, Asset Inventory
 - **Multi-cloud**: Unified identity management with cross-cloud governance
 
 ### Infrastructure as Code (Enhanced for Security)
 
-- **Terraform**: v1.6+ with enhanced security scanning and policy validation
+- **Terraform / OpenTofu**: Actively supported stable versions (such as Terraform 1.16+ / OpenTofu 1.12+, or current N-2 release lines) with enhanced security scanning and policy validation
 - **CloudFormation**: Guard and custom hooks for security validation
 - **Azure Resource Manager**: Bicep templates with security best practices
 - **Pulumi**: Policy as Code with real-time compliance checking
@@ -44,18 +44,18 @@ layout: default
 
 - **AWS**: Security Hub with enhanced findings, GuardDuty with ML detection
 - **Azure**: Microsoft Defender for Cloud with CSPM/CWPP capabilities
-- **Google Cloud**: Security Command Center Premium with Chronicle integration
-- **Multi-cloud CNAPP**: Prisma Cloud, Lacework, Wiz, Orca Security
+- **Google Cloud**: Security Command Center Premium with Google Security Operations (Google SecOps) integration
+- **Multi-cloud CNAPP**: Prisma Cloud, Lacework FortiCNAPP (formerly Lacework), Wiz, Orca Security
 - **Observability**: Splunk with AI/ML, ELK Stack with security analytics
-- **Container Security**: Twistlock/Prisma Cloud, Aqua Security, Sysdig Secure
+- **Container Security**: Prisma Cloud Compute, Aqua Security, Sysdig Secure
 
 ### Compliance and Governance (Policy-as-Code)
 
-- **HashiCorp Sentinel**: Enhanced with Terraform Cloud integration
+- **IBM HashiCorp Sentinel**: Enhanced with Terraform Cloud / HCP integration
 - **Open Policy Agent (OPA)**: Gatekeeper for Kubernetes, Conftest for CI/CD
 - **Cloud Custodian**: Multi-cloud governance and compliance
 - **Checkov**: Static analysis for Infrastructure as Code
-- **Bridgecrew/Prisma Cloud**: Comprehensive code-to-cloud security
+- **Prisma Cloud (code-to-cloud)**: Comprehensive code-to-cloud security
 
 ## Implementation Steps
 
@@ -149,29 +149,29 @@ module "cloud_security" {
 
 ### 1. Security Scanning (Next Generation)
 
-- **Container/IaC Scanning**: Trivy, Snyk, Checkov, Bridgecrew
+- **Container/IaC Scanning**: Trivy, Snyk, Checkov, Prisma Cloud (code-to-cloud)
 - **Application Security**: Veracode, Checkmarx, SonarQube Security
-- **Cloud Security**: Prisma Cloud, Lacework, Wiz, Orca Security
+- **Cloud Security**: Prisma Cloud, Lacework FortiCNAPP, Wiz, Orca Security
 - **Supply Chain**: SLSA framework, Sigstore, CycloneDX SBOM
 
 ### 2. Compliance Automation (Policy-as-Code)
 
-- **Multi-cloud**: Cloud Custodian, Terraform Sentinel
+- **Multi-cloud**: Cloud Custodian, IBM HashiCorp Sentinel, Open Policy Agent (OPA)
 - **Infrastructure**: Chef InSpec, AWS Config Rules, Falco
 - **Cloud Assessment**: Prowler, Scout Suite, CloudMapper
 - **Kubernetes**: Polaris, Falco, OPA Gatekeeper
 
 ### 3. Secret Management (Zero Trust)
 
-- **Enterprise**: HashiCorp Vault, CyberArk Conjur
+- **Enterprise**: HashiCorp Vault (IBM), CyberArk Conjur
 - **Cloud Native**: AWS Secrets Manager, Azure Key Vault, Google Secret Manager
 - **Kubernetes**: External Secrets Operator, Sealed Secrets
 - **DevOps Integration**: GitLab CI secrets, GitHub Actions secrets
 
 ### 4. Identity and Access Management (Modern)
 
-- **Cloud Identity**: Okta, Auth0, Azure AD, AWS IAM Identity Center
-- **Privileged Access**: CyberArk, BeyondTrust, HashiCorp Boundary
+- **Cloud Identity**: Okta, Auth0, Microsoft Entra ID, AWS IAM Identity Center
+- **Privileged Access**: CyberArk, BeyondTrust, HashiCorp Boundary (IBM)
 - **Zero Trust Network**: Zscaler, Palo Alto Prisma Access
 
 ## Continuous Improvement

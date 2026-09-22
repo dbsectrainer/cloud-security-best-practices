@@ -116,7 +116,7 @@ module "advanced_iam" {
 - Predictive threat modeling using machine learning
 - Automated risk scoring with behavioral baselines
 - Proactive vulnerability management with zero-day protection
-- Quantum-resistant cryptography transition planning
+- Post-quantum cryptography migration aligned to NIST FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205 (SLH-DSA)
 
 ## Threat Detection and Response
 
@@ -148,7 +148,7 @@ module "advanced_iam" {
 
 ### Artificial Intelligence Security Framework
 
-- Intelligent security orchestration with GPT-powered analysis
+- Intelligent security orchestration with generative-AI-assisted and LLM-powered analysis
 - Autonomous threat mitigation with human oversight
 - AI governance and responsible AI implementation
 - Large Language Model (LLM) security considerations
@@ -158,15 +158,14 @@ module "advanced_iam" {
 
 ## Compliance and Governance
 
-## Compliance and Governance
-
 ### Regulatory Alignment (Updated for 2025-2026)
 
 - **GDPR**: Enhanced enforcement and AI processing requirements
 - **HIPAA**: Updated technical safeguards for cloud and AI systems
-- **PCI-DSS v4.0**: Enhanced authentication and encryption requirements
+- **PCI-DSS v4.0.1**: Mandatory technical requirements in full force including strengthened authentication, automated compliance checks, and robust encryption
 - **SOC 2 Type II**: Evolved trust service criteria including AI governance
 - **ISO 27001:2022**: Updated controls for cloud and emerging technologies
+- **EU AI Act**: Phased compliance framework with live enforcement for prohibited practices (Feb 2025), GPAI governance (Aug 2025), and general transparency (Aug 2026), ahead of high-risk application milestones (2027–2028)
 - **NIST AI Risk Management Framework (AI RMF 1.0)**: AI system governance
 - Automated compliance reporting with real-time validation
 - Continuous regulatory validation using policy engines
@@ -191,24 +190,21 @@ module "advanced_iam" {
 
 ## Technology Integration
 
-## Technology Integration
-
 ### Cloud Platform Security (2025-2026 Current Services)
 
 - **AWS**: Security Hub, GuardDuty Advanced, Detective, Config Conformance Packs
 - **Azure**: Microsoft Defender for Cloud, Sentinel with AI capabilities
-- **Google Cloud**: Security Command Center Premium, Chronicle SOAR
+- **Google Cloud**: Security Command Center Premium, Google Security Operations (Google SecOps) SOAR
 - **Multi-cloud**: Unified security posture management with CNAPP solutions
 - **Container Security**: Advanced Kubernetes security with runtime protection
 
 ### Security Orchestration Tools (Current Stack)
 
-- **SIEM/SOAR**: Splunk Enterprise Security, Microsoft Sentinel, Chronicle
+- **SIEM/SOAR**: Splunk Enterprise Security, Microsoft Sentinel, Google Security Operations (Google SecOps)
 - **Observability**: ELK Stack with ML features, Datadog Security Monitoring
 - **Incident Management**: PagerDuty with AIOps, ServiceNow Security Operations
-- **Cloud Security**: Prisma Cloud, Lacework, Wiz, Orca Security
+- **Cloud Security**: Prisma Cloud, Lacework FortiCNAPP, Wiz, Orca Security
 - **DevSecOps**: Snyk, Checkmarx, Veracode, GitLab Security features
-- ServiceNow
 
 ## Continuous Improvement
 

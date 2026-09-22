@@ -16,8 +16,6 @@ Develop a robust, adaptable compliance framework that:
 - Minimizes compliance-related risks
 - Enables rapid adaptation to changing regulations
 
-## Regulatory Frameworks Covered
-
 ## Regulatory Frameworks Covered (Updated 2025-2026)
 
 ### 1. Data Protection Regulations (Current Status)
@@ -30,9 +28,9 @@ Develop a robust, adaptable compliance framework that:
 ### 2. Financial Compliance (Enhanced Requirements)
 
 - **SOX**: Updated IT controls for cloud and AI-driven financial reporting
-- **PCI-DSS v4.0**: Enhanced authentication, encryption, and validation requirements
+- **PCI-DSS v4.0.1**: June 2024 revision in full force (future-dated requirements mandatory as of March 31, 2025), emphasizing enhanced multi-factor authentication, cryptographic security, and automated validation
 - **GLBA**: Modernized safeguards rule with cloud-specific considerations
-- **EU AI Act**: Comprehensive AI regulation affecting financial services
+- **EU AI Act**: Enacted comprehensive AI regulation with phased enforcement: prohibited AI practices in force (Feb 2025), General Purpose AI (GPAI) governance in force (Aug 2025), general transparency and governance in force (Aug 2026), followed by Annex III standalone high-risk system compliance (Dec 2027) and Annex I regulated product compliance (Aug 2028)
 
 ### 3. Industry-Specific Standards (2025-2026 Updates)
 
@@ -120,7 +118,7 @@ module "compliance_automation" {
 
 ### Compliance Tools
 
-- Terraform Sentinel
+- IBM HashiCorp Sentinel
 - Open Policy Agent (OPA)
 - Prisma Cloud Compliance
 - Fugue
