@@ -40,6 +40,7 @@ include:
   - INCIDENT_RESPONSE_PLAN.md
   - VENDOR_SECURITY_ASSESSMENT.md
   - SECURITY_TRAINING_GUIDE.md
+  - TECH_STACK_UPDATE_PLAN.md
 
 relative_links:
   enabled: true

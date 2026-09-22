@@ -69,7 +69,7 @@ Reference implementation of a Zero Trust architecture grounded in NIST SP 800-20
 - Identity-centric access with least-privilege enforcement across all cloud planes
 - Micro-segmentation patterns for AWS VPC, Azure Virtual Network, and GCP VPC
 - Continuous verification with session-level re-authentication policies
-- Policy-as-code enforcement using IBM HashiCorp Sentinel, Open Policy Agent (OPA), and OpenTofu
+- Policy-as-code enforcement using IBM HashiCorp Sentinel and Open Policy Agent (OPA)
 - Network perimeter elimination patterns with east-west traffic inspection
 - NIST CSF 2.0 Govern, Identify, Protect, Detect, Respond, and Recover function mapping
 
@@ -84,7 +84,8 @@ Unified security hardening patterns covering all three major cloud platforms wit
 | GCP | IAM, Organization Policy | Cloud Armor, VPC-SC | Security Command Center, Google Security Operations (Google SecOps) |
 
 - Cloud-native application protection platform (CNAPP) integration with Prisma Cloud, Wiz, and Lacework FortiCNAPP
-- Infrastructure as Code security scanning with Checkov, Prisma Cloud (code-to-cloud), and OpenTofu
+- Infrastructure as Code provisioning with Terraform / OpenTofu and policy validation
+- Infrastructure as Code security scanning with Checkov and Prisma Cloud (code-to-cloud)
 - Container security patterns for Kubernetes using Prisma Cloud Compute and Aqua Security
 - Serverless security considerations for AWS Lambda, Azure Functions, and Cloud Run
 
@@ -174,6 +175,7 @@ Recommended reading order for new users:
 3. `COMPLIANCE.md` — regulatory framework mappings
 4. `ARCHITECTURE_AND_DIAGRAMS.md` — system diagrams and network security layouts
 5. `fedramp-30-days/README.md` — begin the day-by-day FedRAMP roadmap
+6. `TECH_STACK_UPDATE_PLAN.md` — vendor renames, standards currency, and remediation history
 
 ### FedRAMP 30-Day Guide
 
@@ -219,6 +221,7 @@ ls *.md fedramp-30-days/*.md
 # Expected output includes:
 # IMPLEMENTATION_GUIDE.md  SECURITY_FRAMEWORK.md  COMPLIANCE.md
 # ARCHITECTURE_AND_DIAGRAMS.md  TESTING_GUIDE.md  INNOVATION.md
+# TECH_STACK_UPDATE_PLAN.md
 # RISK_MANAGEMENT.md  INCIDENT_RESPONSE_PLAN.md  DISASTER_RECOVERY.md
 # fedramp-30-days/README.md  fedramp-30-days/control-checklist.md
 # fedramp-30-days/aws-services-reference.md
@@ -248,6 +251,7 @@ cloud-security-best-practices/
 ├── DISASTER_RECOVERY.md         # DR architecture and RTO/RPO targets
 ├── VENDOR_SECURITY_ASSESSMENT.md
 ├── SECURITY_TRAINING_GUIDE.md
+├── TECH_STACK_UPDATE_PLAN.md    # Vendor/standards currency review and remediation log
 ├── Gemfile                      # Jekyll dependencies
 ├── Gemfile.lock
 ├── _config.yml                  # Jekyll site configuration

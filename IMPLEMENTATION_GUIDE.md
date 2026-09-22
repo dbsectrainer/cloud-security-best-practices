@@ -156,7 +156,7 @@ module "cloud_security" {
 
 ### 2. Compliance Automation (Policy-as-Code)
 
-- **Multi-cloud**: Cloud Custodian, IBM HashiCorp Sentinel, OpenTofu / OPA
+- **Multi-cloud**: Cloud Custodian, IBM HashiCorp Sentinel, Open Policy Agent (OPA)
 - **Infrastructure**: Chef InSpec, AWS Config Rules, Falco
 - **Cloud Assessment**: Prowler, Scout Suite, CloudMapper
 - **Kubernetes**: Polaris, Falco, OPA Gatekeeper

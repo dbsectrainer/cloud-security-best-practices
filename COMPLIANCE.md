@@ -118,7 +118,7 @@ module "compliance_automation" {
 
 ### Compliance Tools
 
-- IBM HashiCorp Sentinel / OpenTofu
+- IBM HashiCorp Sentinel
 - Open Policy Agent (OPA)
 - Prisma Cloud Compliance
 - Fugue
